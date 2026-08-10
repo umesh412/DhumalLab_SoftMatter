@@ -73,7 +73,7 @@ site-nav {
 
 .site-nav a:visited {
 
-    color: #ffffff;
+    color: #12bce8;
 
     text-decoration: none;
 
@@ -89,15 +89,13 @@ site-nav {
 
 .site-nav a:focus {
 
-    color: #b9d9df;
-
-    text-decoration: none;
+    color: #f28c28;
 
 }
 
 .site-nav a:active {
 
-    color: #ffffff;
+    color: #f28c28;
 
 }
 

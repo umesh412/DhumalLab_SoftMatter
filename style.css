@@ -26,7 +26,7 @@ body {
 
 .site-header {
     background: #0f2f3a;
-    color: white;
+    color: #ffffff;
     padding: 24px 8% 18px;
 }
 
@@ -49,59 +49,51 @@ body {
     letter-spacing: 0.4px;
 }
 
-site-nav {
 
+/* Navigation container */
+
+.site-nav {
     display: flex;
-
     align-items: center;
-
     flex-wrap: wrap;
 
-    column-gap: 30px;
-
-    row-gap: 10px;
-
     border-top: 1px solid rgba(255, 255, 255, 0.20);
-
     padding-top: 16px;
-
 }
 
+
+/* Navigation links */
+
 .site-nav a,
-
 .site-nav a:link,
-
 .site-nav a:visited {
+    display: inline-block;
 
     color: #12bce8;
-
     text-decoration: none;
 
     font-size: 0.95rem;
-
     font-weight: 600;
 
-    transition: color 0.2s ease;
+    margin-right: 32px;
+    padding: 4px 0;
 
+    transition: color 0.2s ease;
+}
+
+.site-nav a:last-child {
+    margin-right: 0;
 }
 
 .site-nav a:hover,
-
 .site-nav a:focus {
-
     color: #f28c28;
-
 }
 
 .site-nav a:active {
-
     color: #f28c28;
-
 }
 
-.site-nav a:hover {
-    opacity: 0.75;
-}
 
 /* =========================
    Main content
@@ -172,7 +164,7 @@ main section:first-child p {
 
 
 /* =========================
-   Research areas
+   Research Areas
    ========================= */
 
 main section:nth-child(2) p {
@@ -188,8 +180,10 @@ main section:nth-child(2) p {
 
 main section:nth-child(3) {
     background-color: #f7f9fa;
+
     margin-left: -9.5%;
     margin-right: -9.5%;
+
     padding-left: 9.5%;
     padding-right: 9.5%;
 }
@@ -218,13 +212,36 @@ footer p {
 
 @media (max-width: 768px) {
 
-    header {
-        padding: 24px 6%;
+    .site-header {
+        padding: 22px 6%;
     }
 
-    header h1 {
-        font-size: 1.8rem;
+    .lab-identity h1 {
+        font-size: 1.7rem;
     }
+
+    .lab-identity p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+
+    /* Mobile navigation */
+
+    .site-nav {
+        padding-top: 14px;
+    }
+
+    .site-nav a,
+    .site-nav a:link,
+    .site-nav a:visited {
+        font-size: 0.9rem;
+        margin-right: 20px;
+        margin-bottom: 6px;
+    }
+
+
+    /* Main */
 
     main {
         width: 88%;
@@ -233,6 +250,9 @@ footer p {
     section {
         padding: 42px 0;
     }
+
+
+    /* Hero */
 
     main section:first-child {
         min-height: auto;
@@ -247,33 +267,13 @@ footer p {
         font-size: 1.05rem;
     }
 
+
+    /* Principal Investigator section */
+
     main section:nth-child(3) {
         margin-left: -7%;
         margin-right: -7%;
         padding-left: 7%;
         padding-right: 7%;
-    }
-   .site-header {
-
-        padding: 22px 6%;
-
-    }
-
-    .lab-identity h1 {
-
-        font-size: 1.7rem;
-
-    }
-
-    .site-nav {
-
-        gap: 14px 20px;
-
-    }
-
-    .site-nav a {
-
-        font-size: 0.9rem;
-
     }
 }

@@ -49,19 +49,56 @@ body {
     letter-spacing: 0.4px;
 }
 
-.site-nav {
+site-nav {
+
     display: flex;
+
+    align-items: center;
+
     flex-wrap: wrap;
-    gap: 28px;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    padding-top: 15px;
+
+    column-gap: 30px;
+
+    row-gap: 10px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+
+    padding-top: 16px;
+
 }
 
-.site-nav a {
+.site-nav a,
+
+.site-nav a:link,
+
+.site-nav a:visited {
+
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 0.95rem;
+
     font-weight: 600;
+
+    transition: color 0.2s ease;
+
+}
+
+.site-nav a:hover,
+
+.site-nav a:focus {
+
+    color: #b9d9df;
+
+    text-decoration: none;
+
+}
+
+.site-nav a:active {
+
+    color: #ffffff;
+
 }
 
 .site-nav a:hover {

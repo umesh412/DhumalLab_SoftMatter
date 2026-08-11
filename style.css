@@ -1,12 +1,11 @@
 /* =========================================================
    DHUMAL LAB
-   Soft Matter & Complex Fluids
-   Main Website Stylesheet
+   Main Stylesheet
    ========================================================= */
 
 
 /* =========================================================
-   1. GLOBAL SETTINGS
+   GLOBAL
    ========================================================= */
 
 * {
@@ -33,7 +32,7 @@ img {
 
 
 /* =========================================================
-   2. COLOR SYSTEM
+   COLORS
    ========================================================= */
 
 :root {
@@ -55,7 +54,7 @@ img {
 
 
 /* =========================================================
-   3. HEADER
+   HEADER
    ========================================================= */
 
 .site-header {
@@ -70,20 +69,6 @@ img {
     margin: 0 auto;
 }
 
-
-/* =========================================================
-   4. HEADER BRANDING
-   ========================================================= */
-
-.header-brand-row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-/* Lab identity */
-
 .lab-identity h1 {
     margin: 0;
     color: #ffffff;
@@ -96,12 +81,11 @@ img {
     margin: 3px 0 18px;
     color: var(--text-light);
     font-size: 1rem;
-    letter-spacing: 0.3px;
 }
 
 
 /* =========================================================
-   5. NAVIGATION
+   NAVIGATION
    ========================================================= */
 
 .site-nav {
@@ -123,7 +107,6 @@ img {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: color 0.2s ease;
 }
 
 .site-nav a:hover,
@@ -134,7 +117,7 @@ img {
 
 
 /* =========================================================
-   6. MAIN WIDTH
+   MAIN
    ========================================================= */
 
 main {
@@ -145,17 +128,17 @@ main {
 
 
 /* =========================================================
-   7. GENERAL SECTIONS
+   GENERAL SECTIONS
    ========================================================= */
 
 section {
-    padding: 70px 0;
+    padding: 68px 0;
     border-bottom: 1px solid var(--border);
 }
 
 .section-heading {
     max-width: 860px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
 }
 
 .section-label {
@@ -163,7 +146,7 @@ section {
     color: var(--cyan);
     font-size: 0.82rem;
     font-weight: 700;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
@@ -181,13 +164,9 @@ section {
     line-height: 1.75;
 }
 
-.section-action {
-    margin-top: 30px;
-}
-
 
 /* =========================================================
-   8. BUTTONS AND LINKS
+   LINKS / BUTTONS
    ========================================================= */
 
 .primary-button {
@@ -202,18 +181,12 @@ section {
 
     font-size: 0.95rem;
     font-weight: 700;
-
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
 }
 
 .primary-button:hover,
 .primary-button:focus {
     background-color: var(--orange);
     color: #ffffff;
-    transform: translateY(-1px);
 }
 
 .text-link,
@@ -231,25 +204,34 @@ section {
 
 
 /* =========================================================
-   9. HERO
+   HERO
    ========================================================= */
 
 .hero-section {
-    padding-top: 62px;
-    padding-bottom: 68px;
+    padding-top: 58px;
+    padding-bottom: 62px;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1.08fr 0.92fr;
-    gap: 60px;
+
+    /* Slightly more room for the text */
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+
+    gap: 48px;
     align-items: center;
 }
 
+.hero-text {
+    min-width: 0;
+}
+
 .hero-text h2 {
-    margin: 0 0 24px;
+    margin: 0 0 22px;
+
     color: var(--dark-teal);
-    font-size: 3.35rem;
+
+    font-size: 3.2rem;
     line-height: 1.08;
     letter-spacing: -0.5px;
 }
@@ -257,49 +239,59 @@ section {
 .hero-description {
     max-width: 690px;
     margin: 0 0 16px;
-    color: var(--text-medium);
-    font-size: 1.12rem;
-    line-height: 1.78;
-}
 
-.hero-description-secondary {
-    font-size: 1.04rem;
+    color: var(--text-medium);
+
+    font-size: 1.08rem;
+    line-height: 1.78;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
+    gap: 22px;
     align-items: center;
-    gap: 24px;
-    margin-top: 29px;
+
+    margin-top: 28px;
 }
 
 
 /* =========================================================
-   10. HERO LAB LOGO
+   LAB LOGO
    ========================================================= */
 
 .hero-logo {
+    width: 100%;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+
+    padding: 10px;
 }
 
 .hero-logo img {
-    width: 100%;
-    max-width: 430px;
+    display: block;
+
+    /* Prevents the logo from becoming oversized */
+    width: auto;
+    max-width: 340px;
+
+    /* Prevents cropping */
+    max-height: 430px;
     height: auto;
+
     object-fit: contain;
+
+    margin: 0 auto;
 }
 
 
 /* =========================================================
-   11. ABOUT THE LAB
+   ABOUT LAB
    ========================================================= */
-
-.lab-overview-section {
-    background-color: #ffffff;
-}
 
 .lab-overview-content {
     max-width: 980px;
@@ -307,20 +299,17 @@ section {
 
 .lab-overview-content p {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
+
     color: var(--text-medium);
+
     font-size: 1.07rem;
     line-height: 1.85;
 }
 
-.lab-overview-content .text-link {
-    display: inline-block;
-    margin-top: 4px;
-}
-
 
 /* =========================================================
-   12. RESEARCH METHODS / APPROACH
+   METHODS
    ========================================================= */
 
 .methods-section {
@@ -337,14 +326,12 @@ section {
     display: flex;
     flex-wrap: wrap;
 
-    column-gap: 18px;
-    row-gap: 14px;
-
-    margin-top: 26px;
+    gap: 14px 18px;
 }
 
 .methods-list span {
     display: inline-block;
+
     padding: 10px 18px;
 
     background-color: #ffffff;
@@ -356,41 +343,39 @@ section {
 
     font-size: 0.92rem;
     font-weight: 600;
-    line-height: 1.3;
 
     white-space: nowrap;
 }
 
 
 /* =========================================================
-   13. HOMEPAGE PI PREVIEW
+   PI PREVIEW
    ========================================================= */
-
-.home-people-preview {
-    background-color: #ffffff;
-}
 
 .home-pi-grid {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 46px;
+    grid-template-columns: 210px 1fr;
+
+    gap: 42px;
     align-items: center;
 }
 
 .home-pi-photo img {
     width: 100%;
-    max-width: 220px;
+    max-width: 210px;
     border-radius: 8px;
 }
 
 .home-pi-text h2 {
-    margin: 0 0 16px;
+    margin: 0 0 14px;
+
     color: var(--dark-teal);
-    font-size: 2.15rem;
+    font-size: 2.1rem;
 }
 
 .home-pi-text p {
     max-width: 720px;
+
     color: var(--text-medium);
     line-height: 1.75;
 }
@@ -402,7 +387,7 @@ section {
 
 
 /* =========================================================
-   14. OPPORTUNITIES
+   OPPORTUNITIES
    ========================================================= */
 
 .home-opportunities {
@@ -418,7 +403,8 @@ section {
 .opportunities-grid {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 50px;
+
+    gap: 44px;
     align-items: center;
 }
 
@@ -426,82 +412,78 @@ section {
     margin-bottom: 0;
 }
 
-.opportunities-action {
-    white-space: nowrap;
-}
-
 
 /* =========================================================
-   15. CAMPUS
+   CAMPUS
    ========================================================= */
 
 .campus-section {
     display: grid;
-    grid-template-columns: 1.35fr 0.65fr;
-    gap: 44px;
+    grid-template-columns: 1.4fr 0.6fr;
+
+    gap: 40px;
     align-items: center;
 }
 
 .campus-image {
     overflow: hidden;
-    border-radius: 9px;
+    border-radius: 8px;
 }
 
 .campus-image img {
     width: 100%;
-    height: 330px;
+    height: 300px;
+
     object-fit: cover;
 }
 
 .campus-content h2 {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
+
     color: var(--dark-teal);
-    font-size: 2rem;
+
+    font-size: 1.9rem;
     line-height: 1.2;
 }
 
 .campus-content p {
     color: var(--text-medium);
-    font-size: 1.04rem;
-    line-height: 1.75;
+
+    font-size: 1.02rem;
+    line-height: 1.7;
 }
-
-
-/* Circular UPL logo beside campus image */
 
 .campus-university-logo {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 .campus-university-logo img {
-    width: 145px;
-    height: 145px;
+    width: 130px;
+    height: 130px;
+
     object-fit: contain;
     border-radius: 50%;
 }
 
 
 /* =========================================================
-   16. CONTACT
+   CONTACT
    ========================================================= */
-
-.contact-section {
-    background-color: #ffffff;
-}
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+
+    gap: 40px;
 }
 
 .contact-section p {
     color: var(--text-medium);
-    font-size: 1.05rem;
+
+    font-size: 1.03rem;
     line-height: 1.75;
 }
 
@@ -521,56 +503,48 @@ section {
     font-weight: 600;
 }
 
-.contact-email a:hover,
-.contact-email a:focus {
+.contact-email a:hover {
     color: var(--orange);
 }
 
 
 /* =========================================================
-   17. RESEARCH PAGE
+   RESEARCH PAGE
    ========================================================= */
 
 .page-intro {
     display: grid;
     grid-template-columns: 1fr 0.8fr;
-    gap: 50px;
-    align-items: center;
-}
 
-.research-theme-large {
-    display: flex;
-    justify-content: center;
+    gap: 45px;
     align-items: center;
 }
 
 .research-theme-large img {
     width: 100%;
-    max-width: 520px;
+    max-width: 500px;
+
     object-fit: contain;
 }
-
-
-/* Current research cards */
 
 .research-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 32px;
+
+    gap: 30px;
 }
 
 .research-card {
     overflow: hidden;
-    background-color: #ffffff;
 
     border: 1px solid var(--border);
     border-radius: 8px;
 
-    box-shadow: 0 6px 20px rgba(15, 47, 58, 0.06);
+    background-color: #ffffff;
 }
 
 .research-image {
-    min-height: 255px;
+    min-height: 250px;
 
     display: flex;
     align-items: center;
@@ -579,45 +553,51 @@ section {
     padding: 20px;
 
     background-color: var(--lighter-bg);
+
     border-bottom: 1px solid var(--border);
 }
 
 .research-image img {
     width: 100%;
-    max-height: 280px;
+    max-height: 275px;
+
     object-fit: contain;
 }
 
 .research-card-content {
-    padding: 26px 28px 30px;
+    padding: 25px 27px 28px;
 }
 
 .research-card-label {
     margin: 0 0 7px;
+
     color: var(--orange);
+
     font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 1.2px;
+
     text-transform: uppercase;
 }
 
 .research-card h3 {
-    margin: 0 0 16px;
+    margin: 0 0 15px;
+
     color: var(--dark-teal);
-    font-size: 1.4rem;
-    line-height: 1.3;
+
+    font-size: 1.35rem;
 }
 
 .research-card p {
     margin: 0;
+
     color: var(--text-medium);
-    font-size: 1rem;
+
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   18. PREVIOUS RESEARCH
+   PREVIOUS RESEARCH
    ========================================================= */
 
 .past-research-preview {
@@ -633,6 +613,7 @@ section {
 .past-research-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 28px;
 }
 
@@ -648,49 +629,54 @@ section {
 .past-research-item img {
     width: 100%;
     height: 230px;
-    object-fit: contain;
+
     margin-bottom: 18px;
+
+    object-fit: contain;
 }
 
 .past-research-item h3 {
     margin: 0 0 12px;
+
     color: var(--dark-teal);
+
     font-size: 1.25rem;
 }
 
 .past-research-item p {
     margin: 0;
+
     color: var(--text-medium);
-    font-size: 0.97rem;
+
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   19. PEOPLE PAGE
+   PEOPLE PAGE
    ========================================================= */
-
-.page-intro-simple {
-    padding-bottom: 50px;
-}
 
 .person-profile {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 44px;
+    grid-template-columns: 270px 1fr;
+
+    gap: 42px;
     align-items: start;
 }
 
 .person-photo img {
     width: 100%;
-    max-width: 280px;
+    max-width: 270px;
+
     border-radius: 8px;
 }
 
 .person-details h3 {
     margin: 0 0 10px;
+
     color: var(--dark-teal);
-    font-size: 1.7rem;
+
+    font-size: 1.65rem;
 }
 
 .person-title {
@@ -700,26 +686,16 @@ section {
 
 .person-details p {
     max-width: 760px;
+
     color: var(--text-medium);
-    font-size: 1.04rem;
+
     line-height: 1.75;
 }
 
-.person-contact {
-    margin-top: 24px;
-}
-
-.person-contact a,
-.person-contact a:link,
-.person-contact a:visited {
+.person-contact a {
     color: var(--cyan);
     text-decoration: none;
     font-weight: 600;
-}
-
-.person-contact a:hover,
-.person-contact a:focus {
-    color: var(--orange);
 }
 
 .people-interests-section {
@@ -732,76 +708,42 @@ section {
     padding-right: 8.2%;
 }
 
-.students-placeholder {
-    max-width: 700px;
-    padding: 24px;
-
-    background-color: var(--light-bg);
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
 
 /* =========================================================
-   20. FUTURE VIDEO AREA
-   ========================================================= */
-
-.research-video-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 26px;
-    margin-top: 42px;
-}
-
-.research-video-grid video {
-    width: 100%;
-    border-radius: 8px;
-    background-color: #000000;
-}
-
-
-/* =========================================================
-   21. FOOTER
+   FOOTER
    ========================================================= */
 
 footer {
     background-color: var(--dark-teal-2);
     color: var(--text-light);
+
     text-align: center;
-    padding: 26px 7%;
+
+    padding: 25px 7%;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    line-height: 1.6;
 }
 
 
 /* =========================================================
-   22. TABLET
+   RESPONSIVE — TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
 
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 38px;
     }
 
     .hero-logo img {
-        max-width: 480px;
+        max-width: 320px;
+        max-height: none;
     }
 
-    .campus-section {
-        grid-template-columns: 1fr;
-    }
-
-    .opportunities-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .campus-section,
     .page-intro {
         grid-template-columns: 1fr;
     }
@@ -810,11 +752,15 @@ footer p {
     .past-research-grid {
         grid-template-columns: 1fr;
     }
+
+    .opportunities-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
 /* =========================================================
-   23. MOBILE
+   RESPONSIVE — MOBILE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -831,87 +777,54 @@ footer p {
         font-size: 0.9rem;
     }
 
-
-    /* Navigation */
-
     .site-nav {
         column-gap: 20px;
         row-gap: 9px;
     }
 
-    .site-nav a,
-    .site-nav a:link,
-    .site-nav a:visited {
+    .site-nav a {
         font-size: 0.88rem;
     }
-
-
-    /* Main */
 
     main {
         width: 88%;
     }
 
-
     section {
-        padding: 54px 0;
+        padding: 52px 0;
     }
-
 
     .section-heading h2 {
         font-size: 2rem;
     }
 
-
-    /* Hero */
-
-    .hero-section {
-        padding-top: 50px;
-        padding-bottom: 54px;
-    }
-
     .hero-text h2 {
-        font-size: 2.45rem;
-    }
-
-    .hero-description {
-        font-size: 1.02rem;
+        font-size: 2.4rem;
     }
 
     .hero-logo img {
-        max-width: 360px;
+        max-width: 280px;
     }
-
-
-    /* PI */
 
     .home-pi-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
     }
 
     .home-pi-photo img {
-        max-width: 200px;
+        max-width: 190px;
     }
-
-
-    /* Campus logo */
-
-    .campus-university-logo img {
-        width: 120px;
-        height: 120px;
-    }
-
-
-    /* Contact */
 
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 10px;
     }
 
+    .person-profile {
+        grid-template-columns: 1fr;
+    }
 
-    /* Full-width light sections */
+    .person-photo img {
+        max-width: 230px;
+    }
 
     .methods-section,
     .past-research-preview,
@@ -919,38 +832,26 @@ footer p {
     .people-interests-section {
         margin-left: -7%;
         margin-right: -7%;
+
         padding-left: 7%;
         padding-right: 7%;
     }
 
-
-    /* People */
-
-    .person-profile {
-        grid-template-columns: 1fr;
-    }
-
-    .person-photo img {
-        max-width: 240px;
-    }
-
-
-    /* Videos */
-
-    .research-video-grid {
-        grid-template-columns: 1fr;
+    .campus-university-logo img {
+        width: 110px;
+        height: 110px;
     }
 }
 
 
 /* =========================================================
-   24. SMALL MOBILE
+   RESPONSIVE — SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 560px) {
 
     .hero-text h2 {
-        font-size: 2.05rem;
+        font-size: 2rem;
     }
 
     .hero-actions {
@@ -959,22 +860,20 @@ footer p {
         gap: 14px;
     }
 
-    .campus-image img {
-        height: 230px;
+    .hero-logo img {
+        max-width: 240px;
     }
 
-    .campus-university-logo img {
-        width: 105px;
-        height: 105px;
+    .campus-image img {
+        height: 220px;
     }
 
     .methods-list {
-        column-gap: 10px;
-        row-gap: 10px;
+        gap: 10px;
     }
 
     .methods-list span {
-        padding: 9px 14px;
+        padding: 9px 13px;
         font-size: 0.85rem;
     }
 }

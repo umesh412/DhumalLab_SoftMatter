@@ -1,1339 +1,684 @@
-/* =========================================================
-   DHUMAL LAB
-   Soft Matter & Complex Fluids
-   Main Website Stylesheet
-   ========================================================= */
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
 
-/* =========================================================
-   1. GLOBAL SETTINGS
-   ========================================================= */
+    <meta charset="UTF-8">
 
-* {
-    box-sizing: border-box;
-}
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-html {
-    scroll-behavior: smooth;
-}
+    <title>
+        Dhumal Lab | Soft Matter &amp; Complex Fluids
+    </title>
 
-body {
-    margin: 0;
+    <meta
+        name="description"
+        content="Dhumal Lab at UPL University of Sustainable Technology studies soft matter and complex fluids using theory, coarse-grained modeling, multiscale simulation, and microstructural analysis."
+    >
 
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    <link rel="stylesheet" href="style.css">
 
-    color: #1f2933;
-    background-color: #ffffff;
-}
+</head>
 
-img {
-    display: block;
 
-    max-width: 100%;
-    height: auto;
-}
+<body>
 
 
-/* =========================================================
-   2. COLOR SYSTEM
-   ========================================================= */
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-:root {
+<header class="site-header">
 
-    --dark-teal: #0f2f3a;
-    --dark-teal-2: #0b2128;
+    <div class="header-inner">
 
-    --cyan: #12bce8;
-    --orange: #f28c28;
 
-    --text-dark: #1f2933;
-    --text-medium: #48606f;
-    --text-light: #d9e5e8;
+        <!-- LAB + UNIVERSITY IDENTITY -->
 
-    --light-bg: #f7f9fa;
-    --lighter-bg: #fbfcfd;
+        <div class="header-brand-row">
 
-    --border: #e2e8ec;
-}
 
+            <div class="lab-identity">
 
-/* =========================================================
-   3. HEADER
-   ========================================================= */
+                <h1>
+                    DHUMAL LAB
+                </h1>
 
-.site-header {
+                <p>
+                    Soft Matter &amp; Complex Fluids
+                </p>
 
-    background-color: var(--dark-teal);
-    color: #ffffff;
+            </div>
 
-    padding: 22px 7% 18px;
-}
 
-.header-inner {
+            <div class="university-brand">
 
-    width: 100%;
-    max-width: 1220px;
+                <img
+                    src="images/branding/UPL_logo_circle.jpeg"
+                    alt="UPL University of Sustainable Technology"
+                >
 
-    margin: 0 auto;
-}
+            </div>
 
 
-/* =========================================================
-   4. HEADER BRAND ROW
-   ========================================================= */
+        </div>
 
-.header-brand-row {
 
-    display: flex;
+        <!-- NAVIGATION -->
 
-    align-items: center;
-    justify-content: space-between;
+        <nav class="site-nav"
+             aria-label="Main navigation">
 
-    gap: 40px;
-}
+            <a href="index.html">
+                Home
+            </a>
 
+            <a href="research.html">
+                Research
+            </a>
 
-/* Lab identity */
+            <a href="people.html">
+                People
+            </a>
 
-.lab-identity h1 {
+            <a href="#opportunities">
+                Opportunities
+            </a>
 
-    margin: 0;
+            <a href="#contact">
+                Contact
+            </a>
 
-    color: #ffffff;
+        </nav>
 
-    font-size: 2rem;
-    font-weight: 700;
+    </div>
 
-    letter-spacing: 1.7px;
-}
+</header>
 
-.lab-identity p {
 
-    margin: 3px 0 18px;
 
-    color: var(--text-light);
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
 
-    font-size: 1rem;
+<main>
 
-    letter-spacing: 0.3px;
-}
 
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
 
-/* University logo in header */
+    <section class="hero-section">
 
-.university-brand {
+        <div class="hero-content">
 
-    flex-shrink: 0;
 
-    background-color: #ffffff;
+            <!-- HERO TEXT -->
 
-    border-radius: 6px;
+            <div class="hero-text">
 
-    padding: 7px 12px;
-}
+                <p class="section-label">
+                    Soft Matter &amp; Complex Fluids
+                </p>
 
-.university-brand img {
 
-    width: 220px;
-    height: auto;
+                <h2>
+                    Understanding Soft Matter Across Scales
+                </h2>
 
-    object-fit: contain;
-}
 
+                <p class="hero-description">
 
-/* =========================================================
-   5. NAVIGATION
-   ========================================================= */
+                    We investigate how molecular and colloidal
+                    interactions give rise to microstructure,
+                    dynamics, phase behavior, transport, and
+                    macroscopic properties in complex soft
+                    materials.
 
-.site-nav {
+                </p>
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 
-    column-gap: 38px;
-    row-gap: 10px;
+                <p class="hero-description hero-description-secondary">
 
-    border-top: 1px solid rgba(255, 255, 255, 0.22);
+                    By combining theory, molecular simulation,
+                    coarse-grained modeling, and multiscale
+                    analysis, we seek predictive connections
+                    between microscopic physics and the design
+                    of functional materials and formulations.
 
-    padding-top: 15px;
-}
+                </p>
 
-.site-nav a,
-.site-nav a:link,
-.site-nav a:visited {
 
-    color: var(--cyan);
+                <div class="hero-actions">
 
-    text-decoration: none;
+                    <a class="primary-button"
+                       href="research.html">
 
-    font-size: 0.95rem;
-    font-weight: 600;
+                        Explore Our Research
 
-    transition: color 0.2s ease;
-}
+                    </a>
 
-.site-nav a:hover,
-.site-nav a:focus,
-.site-nav a:active {
 
-    color: var(--orange);
-}
+                    <a class="text-link"
+                       href="people.html">
 
+                        Meet the Lab &rarr;
 
-/* =========================================================
-   6. MAIN WIDTH
-   ========================================================= */
+                    </a>
 
-main {
+                </div>
 
-    width: 86%;
-    max-width: 1220px;
+            </div>
 
-    margin: 0 auto;
-}
 
 
-/* =========================================================
-   7. GENERAL SECTION STYLES
-   ========================================================= */
+            <!-- LAB LOGO -->
 
-section {
+            <div class="hero-logo">
 
-    padding: 72px 0;
+                <img
+                    src="images/branding/DhumalLab_logo.png"
+                    alt="Dhumal Lab Soft Matter and Complex Fluids logo"
+                >
 
-    border-bottom: 1px solid var(--border);
-}
+            </div>
 
-.section-heading {
 
-    max-width: 840px;
+        </div>
 
-    margin-bottom: 38px;
-}
+    </section>
 
-.section-label {
 
-    margin: 0 0 8px;
 
-    color: var(--cyan);
+    <!-- =====================================================
+         ABOUT THE LAB
+         ===================================================== -->
 
-    font-size: 0.82rem;
-    font-weight: 700;
+    <section class="lab-overview-section">
 
-    letter-spacing: 1.6px;
+        <div class="section-heading">
 
-    text-transform: uppercase;
-}
+            <p class="section-label">
+                About the Lab
+            </p>
 
-.section-heading h2 {
+            <h2>
+                Connecting Molecular Interactions,
+                Microstructure &amp; Material Behavior
+            </h2>
 
-    margin: 0 0 18px;
+        </div>
 
-    color: var(--dark-teal);
 
-    font-size: 2.35rem;
-    line-height: 1.18;
-}
+        <div class="lab-overview-content">
 
-.section-heading p {
 
-    margin: 0;
+            <p>
 
-    color: var(--text-medium);
+                The Dhumal Lab investigates the physical
+                principles governing soft matter and complex
+                fluids, where relatively weak molecular and
+                colloidal interactions can collectively produce
+                rich structures, phase transitions, dynamics,
+                and macroscopic material properties.
 
-    font-size: 1.08rem;
-    line-height: 1.75;
-}
+            </p>
 
-.section-action {
 
-    margin-top: 30px;
-}
+            <p>
 
+                Our research seeks to understand how molecular
+                interactions, particle geometry, composition,
+                interfaces, confinement, and thermal motion
+                determine the organization of complex fluids
+                across multiple length and time scales.
 
-/* =========================================================
-   8. BUTTONS / LINKS
-   ========================================================= */
+                A central objective is to connect these
+                microscopic interactions with experimentally
+                observable microstructure and bulk material
+                behavior.
 
-.primary-button {
+            </p>
 
-    display: inline-block;
 
-    padding: 12px 20px;
+            <p>
 
-    background-color: var(--cyan);
-    color: var(--dark-teal);
+                We combine statistical-mechanical theory,
+                coarse-grained modeling, molecular dynamics,
+                Brownian dynamics, and multiscale simulation
+                with detailed microstructural analysis.
 
-    text-decoration: none;
+                These complementary approaches allow us to
+                study systems that range from individual
+                molecules and particles to large-scale
+                collective assemblies.
 
-    border-radius: 5px;
+            </p>
 
-    font-size: 0.95rem;
-    font-weight: 700;
 
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
-}
+            <p>
 
-.primary-button:hover,
-.primary-button:focus {
+                Our broader research interests include
+                colloidal dispersions, concentrated
+                suspensions, polymer nanocomposites,
+                emulsions, pharmaceutical formulations,
+                and biological soft matter.
 
-    background-color: var(--orange);
+                Ultimately, we aim to develop predictive
+                structure-property relationships that can
+                guide the rational design of complex
+                materials and formulations with tailored
+                functionality.
 
-    color: #ffffff;
+            </p>
 
-    transform: translateY(-1px);
-}
 
+            <a class="text-link"
+               href="research.html">
 
-.text-link,
-.text-link:link,
-.text-link:visited {
+                Learn more about our research &rarr;
 
-    color: var(--cyan);
+            </a>
 
-    text-decoration: none;
 
-    font-weight: 700;
-}
+        </div>
 
-.text-link:hover,
-.text-link:focus {
 
-    color: var(--orange);
-}
+        <!--
+        =====================================================
+        FUTURE RESEARCH VIDEO AREA
 
+        Later we can place selected simulation videos here.
 
-/* =========================================================
-   9. HERO
-   ========================================================= */
+        Example future structure:
 
-.hero-section {
+        <div class="research-video-grid">
 
-    padding-top: 68px;
-    padding-bottom: 72px;
-}
+            <video controls muted loop>
+                <source src="videos/example1.mp4"
+                        type="video/mp4">
+            </video>
 
-.hero-content {
+            <video controls muted loop>
+                <source src="videos/example2.mp4"
+                        type="video/mp4">
+            </video>
 
-    display: grid;
+        </div>
+        =====================================================
+        -->
 
-    grid-template-columns: 1.05fr 0.95fr;
 
-    gap: 60px;
+    </section>
 
-    align-items: center;
-}
 
 
-/* Hero text */
+    <!-- =====================================================
+         RESEARCH APPROACH
+         ===================================================== -->
 
-.hero-text h2 {
+    <section class="methods-section">
 
-    margin: 0 0 24px;
+        <div class="section-heading">
 
-    color: var(--dark-teal);
+            <p class="section-label">
+                Research Approach
+            </p>
 
-    font-size: 3.45rem;
-    line-height: 1.08;
 
-    letter-spacing: -0.6px;
-}
+            <h2>
+                Theory, Simulation &amp; Microstructure
+            </h2>
 
-.hero-description {
 
-    max-width: 700px;
+            <p>
 
-    margin: 0 0 17px;
+                We integrate complementary theoretical and
+                computational approaches to bridge molecular
+                interactions, mesoscopic organization, and
+                macroscopic material response.
 
-    color: var(--text-medium);
+            </p>
 
-    font-size: 1.14rem;
-    line-height: 1.78;
-}
+        </div>
 
-.hero-description-secondary {
 
-    font-size: 1.05rem;
-}
+        <div class="methods-list">
 
-.hero-actions {
+            <span>
+                Statistical Mechanics
+            </span>
 
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+            <span>
+                PRISM Theory
+            </span>
 
-    gap: 24px;
+            <span>
+                Molecular Dynamics
+            </span>
 
-    margin-top: 30px;
-}
+            <span>
+                Brownian Dynamics
+            </span>
 
-.hero-secondary-link {
+            <span>
+                Coarse-Grained Modeling
+            </span>
 
-    display: inline-block;
-}
+            <span>
+                Multiscale Simulation
+            </span>
 
+            <span>
+                Microstructural Analysis
+            </span>
 
-/* Hero logo */
+        </div>
 
-.hero-logo {
 
-    display: flex;
+        <div class="section-action">
 
-    justify-content: center;
-    align-items: center;
-}
+            <a class="text-link"
+               href="research.html">
 
-.hero-logo img {
+                Explore research directions &rarr;
 
-    width: 100%;
-    max-width: 500px;
+            </a>
 
-    object-fit: contain;
-}
+        </div>
 
+    </section>
 
-/* =========================================================
-   10. LAB OVERVIEW
-   ========================================================= */
 
-.lab-overview-content {
 
-    max-width: 950px;
-}
+    <!-- =====================================================
+         PRINCIPAL INVESTIGATOR
+         ===================================================== -->
 
-.lab-overview-grid {
+    <section class="home-people-preview">
 
-    display: grid;
+        <div class="home-pi-grid">
 
-    grid-template-columns: 1fr;
 
-    gap: 40px;
-}
+            <div class="home-pi-photo">
 
-.lab-overview-main {
+                <img
+                    src="images/people/umesh_dhumal.png"
+                    alt="Dr. Umesh Dhumal"
+                >
 
-    max-width: 930px;
-}
+            </div>
 
-.lab-overview-main p {
 
-    margin-top: 0;
-    margin-bottom: 22px;
 
-    color: var(--text-medium);
+            <div class="home-pi-text">
 
-    font-size: 1.08rem;
-    line-height: 1.8;
-}
+                <p class="section-label">
+                    Principal Investigator
+                </p>
 
 
-/* =========================================================
-   11. INTERACTIONS -> MICROSTRUCTURE -> PROPERTIES
-   ========================================================= */
+                <h2>
+                    Dr. Umesh Dhumal
+                </h2>
 
-.research-flow {
 
-    display: grid;
+                <p class="home-pi-position">
 
-    grid-template-columns: 1fr auto 1fr auto 1fr;
+                    Assistant Professor<br>
 
-    gap: 22px;
+                    Department of Chemical Engineering<br>
 
-    align-items: center;
+                    SRICT, UPL University of Sustainable Technology<br>
 
-    margin-top: 10px;
-}
+                    Ankleshwar, Gujarat, India
 
-.flow-item {
+                </p>
 
-    height: 100%;
 
-    padding: 24px;
+                <p>
 
-    background-color: var(--lighter-bg);
+                    Research interests span soft matter,
+                    complex fluids, colloidal systems,
+                    polymer nanocomposites, biological fluids,
+                    molecular simulation, and multiscale
+                    computational modeling.
 
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
+                </p>
 
-.flow-number {
 
-    display: block;
+                <a class="text-link"
+                   href="people.html">
 
-    margin-bottom: 8px;
+                    Profile &amp; Lab Members &rarr;
 
-    color: var(--orange);
+                </a>
 
-    font-size: 0.78rem;
-    font-weight: 700;
+            </div>
 
-    letter-spacing: 1px;
-}
 
-.flow-item h3 {
+        </div>
 
-    margin: 0 0 10px;
+    </section>
 
-    color: var(--dark-teal);
 
-    font-size: 1.22rem;
-}
 
-.flow-item p {
+    <!-- =====================================================
+         OPPORTUNITIES
+         ===================================================== -->
 
-    margin: 0;
+    <section id="opportunities"
+             class="home-opportunities">
 
-    color: var(--text-medium);
+        <div class="opportunities-grid">
 
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
 
-.flow-arrow {
+            <div class="section-heading">
 
-    color: var(--cyan);
+                <p class="section-label">
+                    Join the Lab
+                </p>
 
-    font-size: 1.8rem;
-    font-weight: 700;
-}
 
+                <h2>
+                    Interested in Soft Matter Research?
+                </h2>
 
-/* =========================================================
-   12. METHODS / RESEARCH PHILOSOPHY
-   ========================================================= */
 
-.methods-section {
+                <p>
 
-    background-color: var(--light-bg);
+                    We welcome motivated undergraduate and
+                    postgraduate students interested in
+                    computational soft matter, colloids,
+                    polymers, complex fluids, molecular
+                    simulation, and related areas of chemical
+                    engineering.
 
-    margin-left: -8.2%;
-    margin-right: -8.2%;
+                </p>
 
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
+            </div>
 
-.methods-list {
 
-    display: flex;
-    flex-wrap: wrap;
+            <div class="opportunities-action">
 
-    column-gap: 18px;
-    row-gap: 14px;
+                <a class="primary-button"
+                   href="mailto:umesh.dhumal@upluniversity.ac.in">
 
-    margin-top: 28px;
-}
+                    Contact About Research
 
-.methods-list span {
+                </a>
 
-    display: inline-block;
+            </div>
 
-    padding: 10px 18px;
 
-    background-color: #ffffff;
+        </div>
 
-    border: 1px solid #c9d9df;
-    border-radius: 24px;
+    </section>
 
-    color: var(--dark-teal);
 
-    font-size: 0.92rem;
-    font-weight: 600;
-    line-height: 1.3;
 
-    white-space: nowrap;
-}
+    <!-- =====================================================
+         UNIVERSITY / CAMPUS
+         ===================================================== -->
 
+    <section class="campus-section">
 
-/* =========================================================
-   13. HOMEPAGE PI PREVIEW
-   ========================================================= */
 
-.home-people-preview {
+        <div class="campus-image">
 
-    background-color: #ffffff;
-}
+            <img
+                src="images/campus/UPL_image.jpeg"
+                alt="UPL University of Sustainable Technology campus"
+            >
 
-.home-pi-grid {
+        </div>
 
-    display: grid;
 
-    grid-template-columns: 220px 1fr;
 
-    gap: 46px;
+        <div class="campus-content">
 
-    align-items: center;
-}
+            <p class="section-label">
+                Our Location
+            </p>
 
-.home-pi-photo img {
 
-    width: 100%;
-    max-width: 220px;
+            <h2>
+                Dhumal Lab at UPL University
+            </h2>
 
-    border-radius: 8px;
-}
 
-.home-pi-text h2 {
+            <p>
 
-    margin: 0 0 16px;
+                Department of Chemical Engineering<br>
 
-    color: var(--dark-teal);
+                SRICT, UPL University of Sustainable Technology<br>
 
-    font-size: 2.2rem;
-}
+                Ankleshwar, Gujarat, India
 
-.home-pi-text p {
+            </p>
 
-    max-width: 720px;
 
-    color: var(--text-medium);
+            <div class="campus-university-logo">
 
-    line-height: 1.75;
-}
+                <img
+                    src="images/branding/UPL_logo_main.jpeg"
+                    alt="UPL University of Sustainable Technology"
+                >
 
-.home-pi-position {
+            </div>
 
-    color: var(--dark-teal) !important;
 
-    font-weight: 600;
-}
+        </div>
 
 
-/* =========================================================
-   14. OPPORTUNITIES
-   ========================================================= */
+    </section>
 
-.home-opportunities {
 
-    background-color: var(--light-bg);
 
-    margin-left: -8.2%;
-    margin-right: -8.2%;
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
 
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
+    <section id="contact"
+             class="contact-section">
 
-.opportunities-grid {
+        <div class="section-heading">
 
-    display: grid;
+            <p class="section-label">
+                Contact
+            </p>
 
-    grid-template-columns: 1fr auto;
 
-    gap: 50px;
+            <h2>
+                Dhumal Lab
+            </h2>
 
-    align-items: center;
-}
+        </div>
 
-.opportunities-grid .section-heading {
 
-    margin-bottom: 0;
-}
+        <div class="contact-grid">
 
-.opportunities-action {
 
-    white-space: nowrap;
-}
+            <div>
 
+                <p>
 
-/* =========================================================
-   15. CAMPUS SECTION
-   ========================================================= */
+                    <strong>
+                        Dr. Umesh Dhumal
+                    </strong>
 
-.campus-section {
+                    <br>
 
-    display: grid;
+                    Assistant Professor<br>
 
-    grid-template-columns: 1.35fr 0.65fr;
+                    Department of Chemical Engineering<br>
 
-    gap: 44px;
+                    SRICT, UPL University of Sustainable Technology<br>
 
-    align-items: center;
-}
+                    Ankleshwar, Gujarat, India
 
-.campus-image {
+                </p>
 
-    overflow: hidden;
+            </div>
 
-    border-radius: 9px;
-}
 
-.campus-image img {
 
-    width: 100%;
-    height: 330px;
+            <div>
 
-    object-fit: cover;
-}
+                <p class="contact-email">
 
-.campus-content h2 {
+                    <strong>
+                        Email
+                    </strong>
 
-    margin: 0 0 18px;
+                    <br>
 
-    color: var(--dark-teal);
+                    <a href="mailto:umesh.dhumal@upluniversity.ac.in">
 
-    font-size: 2rem;
-    line-height: 1.2;
-}
+                        umesh.dhumal@upluniversity.ac.in
 
-.campus-content p {
+                    </a>
 
-    color: var(--text-medium);
+                    <br>
 
-    font-size: 1.04rem;
-    line-height: 1.75;
-}
+                    <a href="mailto:umesh.dhumal007@gmail.com">
 
-.campus-university-logo {
+                        umesh.dhumal007@gmail.com
 
-    display: inline-block;
+                    </a>
 
-    margin-top: 18px;
+                </p>
 
-    padding: 8px 10px;
+            </div>
 
-    background-color: #ffffff;
 
-    border: 1px solid var(--border);
-    border-radius: 6px;
-}
+        </div>
 
-.campus-university-logo img {
+    </section>
 
-    width: 240px;
-}
 
+</main>
 
-/* =========================================================
-   16. CONTACT
-   ========================================================= */
 
-.contact-section {
 
-    background-color: #ffffff;
-}
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
-.contact-grid {
+<footer>
 
-    display: grid;
+    <p>
 
-    grid-template-columns: 1fr 1fr;
+        &copy; 2026 Dhumal Lab |
+        Soft Matter &amp; Complex Fluids |
+        UPL University of Sustainable Technology
 
-    gap: 50px;
-}
+    </p>
 
-.contact-section p {
+</footer>
 
-    color: var(--text-medium);
 
-    font-size: 1.05rem;
-    line-height: 1.75;
-}
+</body>
 
-.contact-email {
-
-    margin-top: 0;
-}
-
-.contact-email strong {
-
-    color: var(--dark-teal);
-}
-
-.contact-email a,
-.contact-email a:link,
-.contact-email a:visited {
-
-    color: var(--cyan);
-
-    text-decoration: none;
-
-    font-weight: 600;
-}
-
-.contact-email a:hover,
-.contact-email a:focus {
-
-    color: var(--orange);
-}
-
-
-/* =========================================================
-   17. FULL RESEARCH PAGE
-   ========================================================= */
-
-.page-intro {
-
-    display: grid;
-
-    grid-template-columns: 1fr 0.8fr;
-
-    gap: 50px;
-
-    align-items: center;
-}
-
-.research-theme-large {
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.research-theme-large img {
-
-    width: 100%;
-    max-width: 520px;
-
-    object-fit: contain;
-}
-
-
-/* Current research cards */
-
-.research-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 32px;
-}
-
-.research-card {
-
-    overflow: hidden;
-
-    background-color: #ffffff;
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-
-    box-shadow: 0 6px 20px rgba(15, 47, 58, 0.06);
-}
-
-.research-image {
-
-    min-height: 255px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    background-color: var(--lighter-bg);
-
-    border-bottom: 1px solid var(--border);
-}
-
-.research-image img {
-
-    width: 100%;
-
-    max-height: 280px;
-
-    object-fit: contain;
-}
-
-.research-card-content {
-
-    padding: 26px 28px 30px;
-}
-
-.research-card-label {
-
-    margin: 0 0 7px;
-
-    color: var(--orange);
-
-    font-size: 0.78rem;
-    font-weight: 700;
-
-    letter-spacing: 1.2px;
-
-    text-transform: uppercase;
-}
-
-.research-card h3 {
-
-    margin: 0 0 16px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.4rem;
-    line-height: 1.3;
-}
-
-.research-card p {
-
-    margin: 0;
-
-    color: var(--text-medium);
-
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   18. PREVIOUS RESEARCH
-   ========================================================= */
-
-.past-research-preview {
-
-    background-color: var(--light-bg);
-
-    margin-left: -8.2%;
-    margin-right: -8.2%;
-
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
-
-.past-research-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 28px;
-}
-
-.past-research-item {
-
-    background-color: #ffffff;
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-
-    padding: 22px;
-}
-
-.past-research-item img {
-
-    width: 100%;
-    height: 230px;
-
-    object-fit: contain;
-
-    margin-bottom: 18px;
-}
-
-.past-research-item h3 {
-
-    margin: 0 0 12px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.25rem;
-}
-
-.past-research-item p {
-
-    margin: 0;
-
-    color: var(--text-medium);
-
-    font-size: 0.97rem;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   19. PEOPLE PAGE
-   ========================================================= */
-
-.page-intro-simple {
-
-    padding-bottom: 50px;
-}
-
-.person-profile {
-
-    display: grid;
-
-    grid-template-columns: 280px 1fr;
-
-    gap: 44px;
-
-    align-items: start;
-}
-
-.person-photo img {
-
-    width: 100%;
-    max-width: 280px;
-
-    border-radius: 8px;
-}
-
-.person-details h3 {
-
-    margin: 0 0 10px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.7rem;
-}
-
-.person-title {
-
-    color: var(--dark-teal) !important;
-
-    font-weight: 600;
-}
-
-.person-details p {
-
-    max-width: 760px;
-
-    color: var(--text-medium);
-
-    font-size: 1.04rem;
-    line-height: 1.75;
-}
-
-.person-contact {
-
-    margin-top: 24px;
-}
-
-.person-contact a,
-.person-contact a:link,
-.person-contact a:visited {
-
-    color: var(--cyan);
-
-    text-decoration: none;
-
-    font-weight: 600;
-}
-
-.person-contact a:hover,
-.person-contact a:focus {
-
-    color: var(--orange);
-}
-
-.people-interests-section {
-
-    background-color: var(--light-bg);
-
-    margin-left: -8.2%;
-    margin-right: -8.2%;
-
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
-
-.students-placeholder {
-
-    max-width: 700px;
-
-    padding: 24px;
-
-    background-color: var(--light-bg);
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-
-/* =========================================================
-   20. FOOTER
-   ========================================================= */
-
-footer {
-
-    background-color: var(--dark-teal-2);
-    color: var(--text-light);
-
-    text-align: center;
-
-    padding: 26px 7%;
-}
-
-footer p {
-
-    margin: 0;
-
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   21. TABLET
-   ========================================================= */
-
-@media (max-width: 1000px) {
-
-    .hero-content {
-
-        grid-template-columns: 1fr;
-
-        gap: 38px;
-    }
-
-    .hero-logo img {
-
-        max-width: 560px;
-    }
-
-
-    .research-flow {
-
-        grid-template-columns: 1fr;
-    }
-
-    .flow-arrow {
-
-        transform: rotate(90deg);
-
-        text-align: center;
-    }
-
-
-    .campus-section {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .opportunities-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .opportunities-action {
-
-        white-space: normal;
-    }
-
-
-    .page-intro {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .research-grid,
-    .past-research-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-/* =========================================================
-   22. MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .site-header {
-
-        padding: 20px 6% 18px;
-    }
-
-
-    /* Header brand */
-
-    .header-brand-row {
-
-        align-items: flex-start;
-
-        gap: 24px;
-    }
-
-    .lab-identity h1 {
-
-        font-size: 1.65rem;
-    }
-
-    .lab-identity p {
-
-        font-size: 0.9rem;
-    }
-
-    .university-brand img {
-
-        width: 160px;
-    }
-
-
-    /* Navigation */
-
-    .site-nav {
-
-        column-gap: 20px;
-        row-gap: 9px;
-    }
-
-    .site-nav a,
-    .site-nav a:link,
-    .site-nav a:visited {
-
-        font-size: 0.88rem;
-    }
-
-
-    main {
-
-        width: 88%;
-    }
-
-
-    section {
-
-        padding: 54px 0;
-    }
-
-
-    .section-heading h2 {
-
-        font-size: 2rem;
-    }
-
-
-    /* Hero */
-
-    .hero-section {
-
-        padding-top: 54px;
-        padding-bottom: 58px;
-    }
-
-    .hero-text h2 {
-
-        font-size: 2.5rem;
-    }
-
-    .hero-description {
-
-        font-size: 1.03rem;
-    }
-
-
-    /* PI */
-
-    .home-pi-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 28px;
-    }
-
-    .home-pi-photo img {
-
-        max-width: 200px;
-    }
-
-
-    /* Contact */
-
-    .contact-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-    }
-
-
-    /* Full-width sections */
-
-    .methods-section,
-    .past-research-preview,
-    .home-opportunities,
-    .people-interests-section {
-
-        margin-left: -7%;
-        margin-right: -7%;
-
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-
-
-    /* People */
-
-    .person-profile {
-
-        grid-template-columns: 1fr;
-    }
-
-    .person-photo img {
-
-        max-width: 240px;
-    }
-
-}
-
-
-/* =========================================================
-   23. SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 560px) {
-
-    .header-brand-row {
-
-        flex-direction: column;
-    }
-
-    .university-brand {
-
-        margin-top: -5px;
-    }
-
-    .university-brand img {
-
-        width: 190px;
-    }
-
-
-    .hero-text h2 {
-
-        font-size: 2.05rem;
-    }
-
-
-    .hero-actions {
-
-        align-items: flex-start;
-
-        flex-direction: column;
-
-        gap: 14px;
-    }
-
-
-    .campus-image img {
-
-        height: 230px;
-    }
-
-
-    .methods-list {
-
-        column-gap: 10px;
-        row-gap: 10px;
-    }
-
-    .methods-list span {
-
-        padding: 9px 14px;
-
-        font-size: 0.85rem;
-    }
-
-}
+</html>

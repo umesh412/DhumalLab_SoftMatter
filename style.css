@@ -1,11 +1,5 @@
 /* =========================================================
-   DHUMAL LAB
-   Main Stylesheet
-   ========================================================= */
-
-
-/* =========================================================
-   GLOBAL
+   DHUMAL LAB - CLEAN RECOVERY STYLESHEET
    ========================================================= */
 
 * {
@@ -21,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #1f2933;
-    background-color: #ffffff;
+    background: #ffffff;
 }
 
 img {
@@ -30,95 +24,67 @@ img {
     height: auto;
 }
 
-
-/* =========================================================
-   COLORS
-   ========================================================= */
-
 :root {
     --dark-teal: #0f2f3a;
     --dark-teal-2: #0b2128;
-
     --cyan: #12bce8;
     --orange: #f28c28;
-
-    --text-dark: #1f2933;
     --text-medium: #48606f;
     --text-light: #d9e5e8;
-
     --light-bg: #f7f9fa;
-    --lighter-bg: #fbfcfd;
-
     --border: #e2e8ec;
 }
 
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+/* Header */
 
 .site-header {
-    background-color: var(--dark-teal);
-    color: #ffffff;
-    padding: 22px 7% 18px;
+    background: var(--dark-teal);
+    color: white;
+    padding: 24px 7% 18px;
 }
 
 .header-inner {
-    width: 100%;
     max-width: 1220px;
     margin: 0 auto;
 }
 
 .lab-identity h1 {
     margin: 0;
-    color: #ffffff;
+    color: white;
     font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
 }
 
 .lab-identity p {
     margin: 3px 0 18px;
     color: var(--text-light);
-    font-size: 1rem;
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* Navigation */
 
 .site-nav {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-
-    column-gap: 38px;
-    row-gap: 10px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    gap: 10px 36px;
     padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-.site-nav a,
-.site-nav a:link,
-.site-nav a:visited {
+.site-nav a {
     color: var(--cyan);
     text-decoration: none;
-    font-size: 0.95rem;
     font-weight: 600;
+    font-size: 0.95rem;
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.site-nav a:active {
+.site-nav a:hover {
     color: var(--orange);
 }
 
 
-/* =========================================================
-   MAIN
-   ========================================================= */
+/* Main */
 
 main {
     width: 86%;
@@ -126,19 +92,9 @@ main {
     margin: 0 auto;
 }
 
-
-/* =========================================================
-   GENERAL SECTIONS
-   ========================================================= */
-
 section {
-    padding: 68px 0;
+    padding: 66px 0;
     border-bottom: 1px solid var(--border);
-}
-
-.section-heading {
-    max-width: 860px;
-    margin-bottom: 32px;
 }
 
 .section-label {
@@ -150,6 +106,11 @@ section {
     text-transform: uppercase;
 }
 
+.section-heading {
+    max-width: 860px;
+    margin-bottom: 32px;
+}
+
 .section-heading h2 {
     margin: 0 0 18px;
     color: var(--dark-teal);
@@ -158,92 +119,33 @@ section {
 }
 
 .section-heading p {
-    margin: 0;
     color: var(--text-medium);
-    font-size: 1.07rem;
-    line-height: 1.75;
+    font-size: 1.06rem;
 }
 
 
-/* =========================================================
-   LINKS / BUTTONS
-   ========================================================= */
-
-.primary-button {
-    display: inline-block;
-    padding: 12px 20px;
-
-    background-color: var(--cyan);
-    color: var(--dark-teal);
-
-    text-decoration: none;
-    border-radius: 5px;
-
-    font-size: 0.95rem;
-    font-weight: 700;
-}
-
-.primary-button:hover,
-.primary-button:focus {
-    background-color: var(--orange);
-    color: #ffffff;
-}
-
-.text-link,
-.text-link:link,
-.text-link:visited {
-    color: var(--cyan);
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.text-link:hover,
-.text-link:focus {
-    color: var(--orange);
-}
-
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero-section {
-    padding-top: 58px;
-    padding-bottom: 62px;
-}
+/* Hero */
 
 .hero-content {
     display: grid;
-
-    /* Slightly more room for the text */
-    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-
-    gap: 48px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+    gap: 46px;
     align-items: center;
 }
 
-.hero-text {
-    min-width: 0;
-}
-
 .hero-text h2 {
-    margin: 0 0 22px;
-
+    margin: 0 0 24px;
     color: var(--dark-teal);
-
     font-size: 3.2rem;
     line-height: 1.08;
-    letter-spacing: -0.5px;
 }
 
 .hero-description {
-    max-width: 690px;
     margin: 0 0 16px;
-
+    max-width: 690px;
     color: var(--text-medium);
-
     font-size: 1.08rem;
-    line-height: 1.78;
+    line-height: 1.8;
 }
 
 .hero-actions {
@@ -251,73 +153,75 @@ section {
     flex-wrap: wrap;
     gap: 22px;
     align-items: center;
-
     margin-top: 28px;
 }
 
 
-/* =========================================================
-   LAB LOGO
-   ========================================================= */
+/* Lab logo - intentionally small */
 
 .hero-logo {
-    width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: visible;
-
-    padding: 10px;
+    padding: 12px;
 }
 
 .hero-logo img {
-    display: block;
-
-    /* Prevents the logo from becoming oversized */
-    width: auto;
-    max-width: 340px;
-
-    /* Prevents cropping */
-    max-height: 430px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-
     object-fit: contain;
-
-    margin: 0 auto;
 }
 
 
-/* =========================================================
-   ABOUT LAB
-   ========================================================= */
+/* Buttons */
+
+.primary-button {
+    display: inline-block;
+    padding: 11px 19px;
+    background: var(--cyan);
+    color: var(--dark-teal);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background: var(--orange);
+    color: white;
+}
+
+.text-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.text-link:hover {
+    color: var(--orange);
+}
+
+
+/* About */
 
 .lab-overview-content {
     max-width: 980px;
 }
 
 .lab-overview-content p {
-    margin-top: 0;
-    margin-bottom: 23px;
-
+    margin: 0 0 23px;
     color: var(--text-medium);
-
-    font-size: 1.07rem;
+    font-size: 1.06rem;
     line-height: 1.85;
 }
 
 
-/* =========================================================
-   METHODS
-   ========================================================= */
+/* Methods */
 
 .methods-section {
-    background-color: var(--light-bg);
-
+    background: var(--light-bg);
     margin-left: -8.2%;
     margin-right: -8.2%;
-
     padding-left: 8.2%;
     padding-right: 8.2%;
 }
@@ -325,37 +229,25 @@ section {
 .methods-list {
     display: flex;
     flex-wrap: wrap;
-
     gap: 14px 18px;
 }
 
 .methods-list span {
-    display: inline-block;
-
-    padding: 10px 18px;
-
-    background-color: #ffffff;
-
+    padding: 10px 17px;
+    background: white;
     border: 1px solid #c9d9df;
     border-radius: 24px;
-
     color: var(--dark-teal);
-
     font-size: 0.92rem;
     font-weight: 600;
-
-    white-space: nowrap;
 }
 
 
-/* =========================================================
-   PI PREVIEW
-   ========================================================= */
+/* PI */
 
 .home-pi-grid {
     display: grid;
     grid-template-columns: 210px 1fr;
-
     gap: 42px;
     align-items: center;
 }
@@ -368,16 +260,13 @@ section {
 
 .home-pi-text h2 {
     margin: 0 0 14px;
-
     color: var(--dark-teal);
     font-size: 2.1rem;
 }
 
 .home-pi-text p {
     max-width: 720px;
-
     color: var(--text-medium);
-    line-height: 1.75;
 }
 
 .home-pi-position {
@@ -386,424 +275,55 @@ section {
 }
 
 
-/* =========================================================
-   OPPORTUNITIES
-   ========================================================= */
+/* Opportunities */
 
 .home-opportunities {
-    background-color: var(--light-bg);
-
+    background: var(--light-bg);
     margin-left: -8.2%;
     margin-right: -8.2%;
-
     padding-left: 8.2%;
     padding-right: 8.2%;
 }
 
-.opportunities-grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
 
-    gap: 44px;
-    align-items: center;
-}
-
-.opportunities-grid .section-heading {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   CAMPUS
-   ========================================================= */
-
-.campus-section {
-    display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-
-    gap: 40px;
-    align-items: center;
-}
-
-.campus-image {
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.campus-image img {
-    width: 100%;
-    height: 300px;
-
-    object-fit: cover;
-}
-
-.campus-content h2 {
-    margin: 0 0 16px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.9rem;
-    line-height: 1.2;
-}
-
-.campus-content p {
-    color: var(--text-medium);
-
-    font-size: 1.02rem;
-    line-height: 1.7;
-}
-
-.campus-university-logo {
-    display: flex;
-    justify-content: flex-start;
-
-    margin-top: 18px;
-}
-
-.campus-university-logo img {
-    width: 130px;
-    height: 130px;
-
-    object-fit: contain;
-    border-radius: 50%;
-}
-
-
-/* =========================================================
-   CONTACT
-   ========================================================= */
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 40px;
-}
+/* Contact */
 
 .contact-section p {
     color: var(--text-medium);
-
     font-size: 1.03rem;
-    line-height: 1.75;
 }
 
-.contact-email {
-    margin-top: 0;
-}
-
-.contact-email strong {
-    color: var(--dark-teal);
-}
-
-.contact-email a,
-.contact-email a:link,
-.contact-email a:visited {
+.contact-email a {
     color: var(--cyan);
     text-decoration: none;
     font-weight: 600;
 }
 
-.contact-email a:hover {
-    color: var(--orange);
-}
 
-
-/* =========================================================
-   RESEARCH PAGE
-   ========================================================= */
-
-.page-intro {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-
-    gap: 45px;
-    align-items: center;
-}
-
-.research-theme-large img {
-    width: 100%;
-    max-width: 500px;
-
-    object-fit: contain;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 30px;
-}
-
-.research-card {
-    overflow: hidden;
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-
-    background-color: #ffffff;
-}
-
-.research-image {
-    min-height: 250px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    background-color: var(--lighter-bg);
-
-    border-bottom: 1px solid var(--border);
-}
-
-.research-image img {
-    width: 100%;
-    max-height: 275px;
-
-    object-fit: contain;
-}
-
-.research-card-content {
-    padding: 25px 27px 28px;
-}
-
-.research-card-label {
-    margin: 0 0 7px;
-
-    color: var(--orange);
-
-    font-size: 0.78rem;
-    font-weight: 700;
-
-    text-transform: uppercase;
-}
-
-.research-card h3 {
-    margin: 0 0 15px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.35rem;
-}
-
-.research-card p {
-    margin: 0;
-
-    color: var(--text-medium);
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   PREVIOUS RESEARCH
-   ========================================================= */
-
-.past-research-preview {
-    background-color: var(--light-bg);
-
-    margin-left: -8.2%;
-    margin-right: -8.2%;
-
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
-
-.past-research-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 28px;
-}
-
-.past-research-item {
-    background-color: #ffffff;
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-
-    padding: 22px;
-}
-
-.past-research-item img {
-    width: 100%;
-    height: 230px;
-
-    margin-bottom: 18px;
-
-    object-fit: contain;
-}
-
-.past-research-item h3 {
-    margin: 0 0 12px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.25rem;
-}
-
-.past-research-item p {
-    margin: 0;
-
-    color: var(--text-medium);
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   PEOPLE PAGE
-   ========================================================= */
-
-.person-profile {
-    display: grid;
-    grid-template-columns: 270px 1fr;
-
-    gap: 42px;
-    align-items: start;
-}
-
-.person-photo img {
-    width: 100%;
-    max-width: 270px;
-
-    border-radius: 8px;
-}
-
-.person-details h3 {
-    margin: 0 0 10px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.65rem;
-}
-
-.person-title {
-    color: var(--dark-teal) !important;
-    font-weight: 600;
-}
-
-.person-details p {
-    max-width: 760px;
-
-    color: var(--text-medium);
-
-    line-height: 1.75;
-}
-
-.person-contact a {
-    color: var(--cyan);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.people-interests-section {
-    background-color: var(--light-bg);
-
-    margin-left: -8.2%;
-    margin-right: -8.2%;
-
-    padding-left: 8.2%;
-    padding-right: 8.2%;
-}
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* Footer */
 
 footer {
-    background-color: var(--dark-teal-2);
+    background: var(--dark-teal-2);
     color: var(--text-light);
-
     text-align: center;
-
-    padding: 25px 7%;
+    padding: 24px 7%;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.9rem;
 }
 
 
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
+/* Responsive */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
     .hero-content {
         grid-template-columns: 1fr;
     }
 
     .hero-logo img {
-        max-width: 320px;
-        max-height: none;
-    }
-
-    .campus-section,
-    .page-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .research-grid,
-    .past-research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .opportunities-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .site-header {
-        padding: 20px 6% 18px;
-    }
-
-    .lab-identity h1 {
-        font-size: 1.65rem;
-    }
-
-    .lab-identity p {
-        font-size: 0.9rem;
-    }
-
-    .site-nav {
-        column-gap: 20px;
-        row-gap: 9px;
-    }
-
-    .site-nav a {
-        font-size: 0.88rem;
-    }
-
-    main {
-        width: 88%;
-    }
-
-    section {
-        padding: 52px 0;
-    }
-
-    .section-heading h2 {
-        font-size: 2rem;
-    }
-
-    .hero-text h2 {
-        font-size: 2.4rem;
-    }
-
-    .hero-logo img {
-        max-width: 280px;
+        max-width: 260px;
     }
 
     .home-pi-grid {
@@ -813,67 +333,31 @@ footer p {
     .home-pi-photo img {
         max-width: 190px;
     }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .person-profile {
-        grid-template-columns: 1fr;
-    }
-
-    .person-photo img {
-        max-width: 230px;
-    }
-
-    .methods-section,
-    .past-research-preview,
-    .home-opportunities,
-    .people-interests-section {
-        margin-left: -7%;
-        margin-right: -7%;
-
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-
-    .campus-university-logo img {
-        width: 110px;
-        height: 110px;
-    }
 }
 
+@media (max-width: 600px) {
 
-/* =========================================================
-   RESPONSIVE — SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 560px) {
-
-    .hero-text h2 {
-        font-size: 2rem;
+    main {
+        width: 90%;
     }
 
-    .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
+    .hero-text h2 {
+        font-size: 2.1rem;
     }
 
     .hero-logo img {
-        max-width: 240px;
+        max-width: 220px;
     }
 
-    .campus-image img {
-        height: 220px;
+    .site-nav {
+        gap: 8px 18px;
     }
 
-    .methods-list {
-        gap: 10px;
-    }
-
-    .methods-list span {
-        padding: 9px 13px;
-        font-size: 0.85rem;
+    .methods-section,
+    .home-opportunities {
+        margin-left: -6%;
+        margin-right: -6%;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 }

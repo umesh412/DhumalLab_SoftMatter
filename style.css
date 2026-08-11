@@ -864,53 +864,89 @@ footer p {
     }
 }
 /* =========================================================
-   EDUCATION & EXPERIENCE TIMELINE
+   EDUCATION & PROFESSIONAL EXPERIENCE
    ========================================================= */
 
-.timeline-list {
-    max-width: 900px;
+.compact-heading {
+    margin-bottom: 22px;
 }
 
-.timeline-item {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 26px;
+.compact-heading h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
 
-    padding: 22px 0;
+
+.academic-list {
+    max-width: 980px;
+}
+
+
+.academic-item {
+    padding: 17px 0;
 
     border-bottom: 1px solid var(--border);
 }
 
-.timeline-item:first-child {
+
+.academic-item:first-child {
     padding-top: 0;
 }
 
-.timeline-year {
-    color: var(--orange);
 
-    font-size: 0.95rem;
-    font-weight: 700;
+.academic-item:last-child {
+    border-bottom: none;
 }
 
-.timeline-content h3 {
-    margin: 0 0 8px;
+
+.academic-item h3 {
+    margin: 0 0 5px;
 
     color: var(--dark-teal);
 
-    font-size: 1.18rem;
-}
-
-.timeline-content p {
-    margin: 0;
-
-    color: var(--text-medium);
-
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 
-/* Alternate background for experience */
+.academic-year {
+    display: inline-block;
+
+    min-width: 110px;
+
+    margin-right: 12px;
+
+    color: var(--orange);
+
+    font-size: 0.93rem;
+    font-weight: 700;
+}
+
+
+.academic-institution {
+    margin: 0 0 0 122px !important;
+
+    color: var(--text-medium) !important;
+
+    font-size: 0.96rem !important;
+    line-height: 1.55 !important;
+}
+
+
+.academic-honor {
+    margin: 2px 0 0 122px !important;
+
+    color: var(--text-medium) !important;
+
+    font-size: 0.92rem !important;
+    font-style: italic;
+
+    line-height: 1.5 !important;
+}
+
+
+/* Experience section */
 
 .experience-section {
     background-color: var(--light-bg);
@@ -927,9 +963,22 @@ footer p {
 
 @media (max-width: 650px) {
 
-    .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 5px;
+    .compact-heading h2 {
+        font-size: 1.55rem;
+    }
+
+    .academic-year {
+        display: block;
+
+        min-width: 0;
+
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+
+    .academic-institution,
+    .academic-honor {
+        margin-left: 0 !important;
     }
 
     .experience-section {

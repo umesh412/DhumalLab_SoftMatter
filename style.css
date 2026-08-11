@@ -791,3 +791,34 @@ footer p {
         max-height: 240px;
     }
 }
+/* Dedicated Research Page */
+
+.page-intro {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.research-theme-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.research-theme-large img {
+    width: 100%;
+    max-width: 520px;
+    object-fit: contain;
+}
+
+@media (max-width: 950px) {
+
+    .page-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .research-theme-large img {
+        max-width: 600px;
+    }
+}

@@ -1,5 +1,11 @@
 /* =========================================================
-   DHUMAL LAB - CLEAN RECOVERY STYLESHEET
+   DHUMAL LAB
+   Clean Stable Stylesheet
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
    ========================================================= */
 
 * {
@@ -12,10 +18,12 @@ html {
 
 body {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+
     color: #1f2933;
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 img {
@@ -24,185 +32,285 @@ img {
     height: auto;
 }
 
+
+/* =========================================================
+   COLORS
+   ========================================================= */
+
 :root {
     --dark-teal: #0f2f3a;
     --dark-teal-2: #0b2128;
+
     --cyan: #12bce8;
     --orange: #f28c28;
+
     --text-medium: #48606f;
     --text-light: #d9e5e8;
+
     --light-bg: #f7f9fa;
+    --lighter-bg: #fbfcfd;
+
     --border: #e2e8ec;
 }
 
 
-/* Header */
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .site-header {
-    background: var(--dark-teal);
-    color: white;
+    background-color: var(--dark-teal);
+    color: #ffffff;
+
     padding: 24px 7% 18px;
 }
 
 .header-inner {
+    width: 100%;
     max-width: 1220px;
+
     margin: 0 auto;
 }
 
 .lab-identity h1 {
     margin: 0;
-    color: white;
+
+    color: #ffffff;
+
     font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 1.5px;
 }
 
 .lab-identity p {
     margin: 3px 0 18px;
+
     color: var(--text-light);
+
+    font-size: 1rem;
 }
 
 
-/* Navigation */
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 
 .site-nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+
     gap: 10px 36px;
+
     padding-top: 15px;
-    border-top: 1px solid rgba(255,255,255,0.2);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
 
-.site-nav a {
+.site-nav a,
+.site-nav a:link,
+.site-nav a:visited {
     color: var(--cyan);
+
     text-decoration: none;
-    font-weight: 600;
+
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a:focus {
     color: var(--orange);
 }
 
 
-/* Main */
+/* =========================================================
+   MAIN
+   ========================================================= */
 
 main {
     width: 86%;
     max-width: 1220px;
+
     margin: 0 auto;
 }
 
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
 section {
     padding: 66px 0;
-    border-bottom: 1px solid var(--border);
-}
 
-.section-label {
-    margin: 0 0 8px;
-    color: var(--cyan);
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
 }
 
 .section-heading {
     max-width: 860px;
+
     margin-bottom: 32px;
+}
+
+.section-label {
+    margin: 0 0 8px;
+
+    color: var(--cyan);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .section-heading h2 {
     margin: 0 0 18px;
+
     color: var(--dark-teal);
+
     font-size: 2.3rem;
     line-height: 1.2;
 }
 
 .section-heading p {
+    margin: 0;
+
     color: var(--text-medium);
+
     font-size: 1.06rem;
+    line-height: 1.75;
 }
 
 
-/* Hero */
+/* =========================================================
+   BUTTONS / LINKS
+   ========================================================= */
+
+.primary-button {
+    display: inline-block;
+
+    padding: 11px 19px;
+
+    background-color: var(--cyan);
+    color: var(--dark-teal);
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: var(--orange);
+    color: #ffffff;
+}
+
+.text-link,
+.text-link:link,
+.text-link:visited {
+    color: var(--cyan);
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.text-link:hover,
+.text-link:focus {
+    color: var(--orange);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-section {
+    padding-top: 56px;
+    padding-bottom: 60px;
+}
 
 .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
-    gap: 46px;
+
+    grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.75fr);
+
+    gap: 42px;
+
     align-items: center;
 }
 
+.hero-text {
+    min-width: 0;
+}
+
 .hero-text h2 {
-    margin: 0 0 24px;
+    margin: 0 0 22px;
+
     color: var(--dark-teal);
-    font-size: 3.2rem;
+
+    font-size: 3.15rem;
     line-height: 1.08;
+    letter-spacing: -0.5px;
 }
 
 .hero-description {
-    margin: 0 0 16px;
     max-width: 690px;
+
+    margin: 0 0 16px;
+
     color: var(--text-medium);
+
     font-size: 1.08rem;
-    line-height: 1.8;
+    line-height: 1.78;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px;
     align-items: center;
+
+    gap: 22px;
+
     margin-top: 28px;
 }
 
 
-/* Lab logo - intentionally small */
+/* =========================================================
+   HERO LAB LOGO
+   ========================================================= */
 
 .hero-logo {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+
+    padding: 10px;
 }
 
 .hero-logo img {
-    width: 100%;
-    max-width: 300px;
+    width: auto;
+
+    max-width: 280px;
+    max-height: 380px;
+
     height: auto;
+
     object-fit: contain;
+
+    margin: 0 auto;
 }
 
 
-/* Buttons */
-
-.primary-button {
-    display: inline-block;
-    padding: 11px 19px;
-    background: var(--cyan);
-    color: var(--dark-teal);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 700;
-}
-
-.primary-button:hover {
-    background: var(--orange);
-    color: white;
-}
-
-.text-link {
-    color: var(--cyan);
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.text-link:hover {
-    color: var(--orange);
-}
-
-
-/* About */
+/* =========================================================
+   ABOUT LAB
+   ========================================================= */
 
 .lab-overview-content {
     max-width: 980px;
@@ -210,18 +318,24 @@ section {
 
 .lab-overview-content p {
     margin: 0 0 23px;
+
     color: var(--text-medium);
+
     font-size: 1.06rem;
     line-height: 1.85;
 }
 
 
-/* Methods */
+/* =========================================================
+   METHODS
+   ========================================================= */
 
 .methods-section {
-    background: var(--light-bg);
+    background-color: var(--light-bg);
+
     margin-left: -8.2%;
     margin-right: -8.2%;
+
     padding-left: 8.2%;
     padding-right: 8.2%;
 }
@@ -229,101 +343,441 @@ section {
 .methods-list {
     display: flex;
     flex-wrap: wrap;
+
     gap: 14px 18px;
 }
 
 .methods-list span {
+    display: inline-block;
+
     padding: 10px 17px;
-    background: white;
+
+    background-color: #ffffff;
+
     border: 1px solid #c9d9df;
     border-radius: 24px;
+
     color: var(--dark-teal);
+
     font-size: 0.92rem;
     font-weight: 600;
 }
 
 
-/* PI */
+/* =========================================================
+   PI PREVIEW
+   ========================================================= */
 
 .home-pi-grid {
     display: grid;
+
     grid-template-columns: 210px 1fr;
+
     gap: 42px;
+
     align-items: center;
 }
 
 .home-pi-photo img {
     width: 100%;
     max-width: 210px;
+
     border-radius: 8px;
 }
 
 .home-pi-text h2 {
     margin: 0 0 14px;
+
     color: var(--dark-teal);
+
     font-size: 2.1rem;
 }
 
 .home-pi-text p {
     max-width: 720px;
+
     color: var(--text-medium);
+
+    line-height: 1.75;
 }
 
 .home-pi-position {
     color: var(--dark-teal) !important;
+
     font-weight: 600;
 }
 
 
-/* Opportunities */
+/* =========================================================
+   OPPORTUNITIES
+   ========================================================= */
 
 .home-opportunities {
-    background: var(--light-bg);
+    background-color: var(--light-bg);
+
     margin-left: -8.2%;
     margin-right: -8.2%;
+
     padding-left: 8.2%;
     padding-right: 8.2%;
 }
 
 
-/* Contact */
+/* =========================================================
+   CAMPUS
+   ========================================================= */
+
+.campus-section {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+
+    gap: 38px;
+
+    align-items: center;
+}
+
+.campus-image {
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.campus-image img {
+    width: 100%;
+    height: 290px;
+
+    object-fit: cover;
+}
+
+.campus-content h2 {
+    margin: 0 0 16px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.campus-content p {
+    color: var(--text-medium);
+
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.campus-university-logo {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 18px;
+}
+
+.campus-university-logo img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
 
 .contact-section p {
     color: var(--text-medium);
+
     font-size: 1.03rem;
+    line-height: 1.75;
 }
 
-.contact-email a {
+.contact-email {
+    margin-top: 0;
+}
+
+.contact-email strong {
+    color: var(--dark-teal);
+}
+
+.contact-email a,
+.contact-email a:link,
+.contact-email a:visited {
     color: var(--cyan);
+
     text-decoration: none;
+
     font-weight: 600;
 }
 
+.contact-email a:hover {
+    color: var(--orange);
+}
 
-/* Footer */
+
+/* =========================================================
+   RESEARCH PAGE
+   ========================================================= */
+
+.page-intro {
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+.research-theme-large img {
+    width: 100%;
+    max-width: 500px;
+
+    object-fit: contain;
+}
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.research-card {
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.research-image {
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: var(--lighter-bg);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.research-image img {
+    width: 100%;
+    max-height: 275px;
+
+    object-fit: contain;
+}
+
+.research-card-content {
+    padding: 25px 27px 28px;
+}
+
+.research-card-label {
+    margin: 0 0 7px;
+
+    color: var(--orange);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.research-card h3 {
+    margin: 0 0 15px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.35rem;
+}
+
+.research-card p {
+    margin: 0;
+
+    color: var(--text-medium);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PREVIOUS RESEARCH
+   ========================================================= */
+
+.past-research-preview {
+    background-color: var(--light-bg);
+
+    margin-left: -8.2%;
+    margin-right: -8.2%;
+
+    padding-left: 8.2%;
+    padding-right: 8.2%;
+}
+
+.past-research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+.past-research-item {
+    padding: 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.past-research-item img {
+    width: 100%;
+    height: 230px;
+
+    margin-bottom: 18px;
+
+    object-fit: contain;
+}
+
+.past-research-item h3 {
+    margin: 0 0 12px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.25rem;
+}
+
+.past-research-item p {
+    margin: 0;
+
+    color: var(--text-medium);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PEOPLE PAGE
+   ========================================================= */
+
+.person-profile {
+    display: grid;
+
+    grid-template-columns: 270px 1fr;
+
+    gap: 42px;
+
+    align-items: start;
+}
+
+.person-photo img {
+    width: 100%;
+    max-width: 270px;
+
+    border-radius: 8px;
+}
+
+.person-details h3 {
+    margin: 0 0 10px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.65rem;
+}
+
+.person-title {
+    color: var(--dark-teal) !important;
+
+    font-weight: 600;
+}
+
+.person-details p {
+    max-width: 760px;
+
+    color: var(--text-medium);
+
+    line-height: 1.75;
+}
+
+.person-contact a {
+    color: var(--cyan);
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.people-interests-section {
+    background-color: var(--light-bg);
+
+    margin-left: -8.2%;
+    margin-right: -8.2%;
+
+    padding-left: 8.2%;
+    padding-right: 8.2%;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
-    background: var(--dark-teal-2);
+    background-color: var(--dark-teal-2);
     color: var(--text-light);
+
     text-align: center;
+
     padding: 24px 7%;
 }
 
 footer p {
     margin: 0;
+
+    font-size: 0.9rem;
 }
 
 
-/* Responsive */
+/* =========================================================
+   TABLET
+   ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     .hero-content {
         grid-template-columns: 1fr;
     }
 
     .hero-logo img {
-        max-width: 260px;
+        max-width: 250px;
+        max-height: none;
+    }
+
+    .campus-section,
+    .page-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .research-grid,
+    .past-research-grid {
+        grid-template-columns: 1fr;
     }
 
     .home-pi-grid {
@@ -335,29 +789,77 @@ footer p {
     }
 }
 
-@media (max-width: 600px) {
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
 
     main {
         width: 90%;
     }
 
-    .hero-text h2 {
-        font-size: 2.1rem;
+    section {
+        padding: 52px 0;
     }
 
-    .hero-logo img {
-        max-width: 220px;
+    .lab-identity h1 {
+        font-size: 1.65rem;
+    }
+
+    .lab-identity p {
+        font-size: 0.9rem;
     }
 
     .site-nav {
         gap: 8px 18px;
     }
 
+    .site-nav a {
+        font-size: 0.88rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.05rem;
+    }
+
+    .hero-logo img {
+        max-width: 220px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
     .methods-section,
-    .home-opportunities {
+    .past-research-preview,
+    .home-opportunities,
+    .people-interests-section {
         margin-left: -6%;
         margin-right: -6%;
+
         padding-left: 6%;
         padding-right: 6%;
+    }
+
+    .contact-grid,
+    .person-profile {
+        grid-template-columns: 1fr;
+    }
+
+    .person-photo img {
+        max-width: 230px;
+    }
+
+    .campus-image img {
+        height: 220px;
+    }
+
+    .campus-university-logo img {
+        width: 100px;
+        height: 100px;
     }
 }

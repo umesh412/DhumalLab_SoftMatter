@@ -1109,3 +1109,40 @@ footer p {
         max-height: 240px;
     }
 }
+/* =========================================================
+   HOMEPAGE LAB OVERVIEW
+   ========================================================= */
+
+.lab-overview-content {
+    max-width: 950px;
+}
+
+.lab-overview-content p {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: var(--text-medium);
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+/* Secondary hero link */
+
+.hero-secondary-link {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .hero-secondary-link {
+        display: block;
+        margin-left: 0;
+        margin-top: 18px;
+    }
+}

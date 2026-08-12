@@ -1058,3 +1058,248 @@ footer p {
         margin-left: 0 !important;
     }
 }
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
+
+.publication-section-heading {
+    max-width: 860px;
+    margin-bottom: 26px;
+}
+
+.publication-section-heading h2 {
+    margin: 0;
+
+    color: var(--dark-teal);
+
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   PUBLICATION LIST
+   ========================================================= */
+
+.publication-list {
+    max-width: 1080px;
+}
+
+.publication-item {
+    display: grid;
+
+    grid-template-columns: 38px 1fr;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.publication-item:first-child {
+    padding-top: 0;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-number {
+    color: var(--orange);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.publication-item p {
+    margin: 0;
+
+    color: var(--text-medium);
+
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.publication-title {
+    color: var(--dark-teal);
+
+    font-weight: 600;
+}
+
+.publication-journal {
+    font-style: italic;
+
+    color: var(--text-dark);
+}
+
+.publication-status {
+    color: var(--orange);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   IMPACT FACTOR
+   ========================================================= */
+
+.impact-factor {
+    display: inline-block;
+
+    margin-left: 8px;
+
+    padding: 2px 7px;
+
+    background-color: var(--light-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    color: var(--orange);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PUBLICATION LINKS
+   ========================================================= */
+
+.publication-link,
+.publication-link:link,
+.publication-link:visited {
+    display: inline-block;
+
+    margin-top: 7px;
+
+    color: var(--cyan);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.publication-link:hover,
+.publication-link:focus {
+    color: var(--orange);
+}
+
+
+/* =========================================================
+   ALTERNATE BACKGROUND
+   ========================================================= */
+
+.alternate-section {
+    background-color: var(--light-bg);
+
+    margin-left: -8.2%;
+    margin-right: -8.2%;
+
+    padding-left: 8.2%;
+    padding-right: 8.2%;
+}
+
+
+/* =========================================================
+   CONFERENCE PRESENTATIONS
+   ========================================================= */
+
+.conference-list {
+    max-width: 1080px;
+}
+
+.conference-item {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 24px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.conference-item:first-child {
+    padding-top: 0;
+}
+
+.conference-item:last-child {
+    border-bottom: none;
+}
+
+.conference-year {
+    color: var(--orange);
+
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+.conference-item h3 {
+    margin: 0 0 5px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.conference-title {
+    margin: 0 0 4px;
+
+    color: var(--text-medium);
+
+    font-size: 0.97rem;
+    line-height: 1.6;
+}
+
+.conference-location {
+    margin: 0;
+
+    color: #6c7e88;
+
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PUBLICATIONS MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .publication-section-heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .publication-item {
+        grid-template-columns: 28px 1fr;
+
+        gap: 10px;
+    }
+
+    .conference-item {
+        grid-template-columns: 1fr;
+
+        gap: 4px;
+    }
+
+    .alternate-section {
+        margin-left: -6%;
+        margin-right: -6%;
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .impact-factor {
+        margin-left: 4px;
+        margin-top: 4px;
+    }
+}

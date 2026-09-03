@@ -1387,3 +1387,28 @@ footer p {
         padding: 21px;
     }
 }
+/* =========================================================
+
+   CLICKABLE LAB TITLE
+
+   ========================================================= */
+
+.lab-identity h1 a,
+
+.lab-identity h1 a:link,
+
+.lab-identity h1 a:visited {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+}
+
+.lab-identity h1 a:hover,
+
+.lab-identity h1 a:focus {
+
+    color: var(--cyan);
+
+}

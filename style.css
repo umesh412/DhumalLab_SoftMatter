@@ -1383,7 +1383,7 @@ section {
 
 
 /* =========================================================
-   32. FOOTER
+   FOOTER
    ========================================================= */
 
 footer {
@@ -1398,10 +1398,29 @@ footer {
 footer p {
     margin: 0;
 
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    line-height: 1.7;
 }
 
+footer a,
+footer a:link,
+footer a:visited {
+    color: var(--text-light);
 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--cyan);
+}
+
+.footer-divider {
+    margin: 0 8px;
+
+    color: #78909a;
+}
 /* =========================================================
    33. TABLET
    ========================================================= */

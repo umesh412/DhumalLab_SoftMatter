@@ -1672,3 +1672,40 @@ footer p {
     font-size: 0.86rem !important;
     line-height: 1.55 !important;
 }
+/* =========================================================
+   EMPTY MEMBER PHOTO PLACEHOLDER
+   ========================================================= */
+
+.member-photo-empty {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f4f7f8;
+
+    border: 1px dashed #b8c7cd;
+    border-radius: 8px;
+
+    color: #81939b;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   MEMBER POSITION
+   ========================================================= */
+
+.member-position {
+    margin: 0 !important;
+
+    color: var(--text-medium) !important;
+
+    font-size: 0.91rem !important;
+}

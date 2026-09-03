@@ -1397,18 +1397,16 @@ footer p {
 
 .lab-identity h1 a:link,
 
-.lab-identity h1 a:visited {
+.lab-identity h1 a:visited,
+
+.lab-identity h1 a:hover,
+
+.lab-identity h1 a:focus,
+
+.lab-identity h1 a:active {
 
     color: #ffffff;
 
     text-decoration: none;
-
-}
-
-.lab-identity h1 a:hover,
-
-.lab-identity h1 a:focus {
-
-    color: var(--cyan);
 
 }

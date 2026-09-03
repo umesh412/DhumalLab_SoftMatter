@@ -93,7 +93,23 @@ img {
 
 
 /* =========================================================
-   4. NAVIGATION
+   4. CLICKABLE LAB TITLE
+   ========================================================= */
+
+.lab-identity h1 a,
+.lab-identity h1 a:link,
+.lab-identity h1 a:visited,
+.lab-identity h1 a:hover,
+.lab-identity h1 a:focus,
+.lab-identity h1 a:active {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
    ========================================================= */
 
 .site-nav {
@@ -127,7 +143,7 @@ img {
 
 
 /* =========================================================
-   5. MAIN
+   6. MAIN
    ========================================================= */
 
 main {
@@ -139,7 +155,7 @@ main {
 
 
 /* =========================================================
-   6. GENERAL SECTIONS
+   7. GENERAL SECTIONS
    ========================================================= */
 
 section {
@@ -186,7 +202,7 @@ section {
 
 
 /* =========================================================
-   7. COMPACT HEADINGS
+   8. COMPACT HEADINGS
    ========================================================= */
 
 .compact-heading {
@@ -201,7 +217,7 @@ section {
 
 
 /* =========================================================
-   8. BUTTONS / LINKS
+   9. BUTTONS / LINKS
    ========================================================= */
 
 .primary-button {
@@ -243,7 +259,7 @@ section {
 
 
 /* =========================================================
-   9. HERO
+   10. HERO
    ========================================================= */
 
 .hero-section {
@@ -303,7 +319,7 @@ section {
 
 
 /* =========================================================
-   10. HERO LAB LOGO
+   11. HERO LAB LOGO
    ========================================================= */
 
 .hero-logo {
@@ -326,7 +342,7 @@ section {
 
 
 /* =========================================================
-   11. ABOUT LAB
+   12. ABOUT LAB
    ========================================================= */
 
 .lab-overview-content {
@@ -344,7 +360,7 @@ section {
 
 
 /* =========================================================
-   12. METHODS / RESEARCH APPROACH
+   13. METHODS / RESEARCH APPROACH
    ========================================================= */
 
 .methods-section {
@@ -382,7 +398,7 @@ section {
 
 
 /* =========================================================
-   13. HOMEPAGE PI PREVIEW
+   14. HOMEPAGE PI PREVIEW
    ========================================================= */
 
 .home-pi-grid {
@@ -426,7 +442,7 @@ section {
 
 
 /* =========================================================
-   14. OPPORTUNITIES
+   15. OPPORTUNITIES
    ========================================================= */
 
 .home-opportunities {
@@ -441,7 +457,7 @@ section {
 
 
 /* =========================================================
-   15. CAMPUS
+   16. CAMPUS
    ========================================================= */
 
 .campus-section {
@@ -502,7 +518,7 @@ section {
 
 
 /* =========================================================
-   16. CONTACT
+   17. CONTACT
    ========================================================= */
 
 .contact-grid {
@@ -545,7 +561,7 @@ section {
 
 
 /* =========================================================
-   17. RESEARCH PAGE INTRO
+   18. RESEARCH PAGE INTRO
    ========================================================= */
 
 .page-intro {
@@ -571,7 +587,7 @@ section {
 
 
 /* =========================================================
-   18. RESEARCH CARDS
+   19. RESEARCH CARDS
    ========================================================= */
 
 .research-grid {
@@ -645,7 +661,7 @@ section {
 
 
 /* =========================================================
-   19. PREVIOUS RESEARCH
+   20. PREVIOUS RESEARCH
    ========================================================= */
 
 .past-research-preview {
@@ -702,7 +718,7 @@ section {
 
 
 /* =========================================================
-   20. PEOPLE PAGE
+   21. OLD PEOPLE PROFILE STYLES
    ========================================================= */
 
 .person-profile {
@@ -758,6 +774,11 @@ section {
     font-weight: 600;
 }
 
+.person-contact a:hover,
+.person-contact a:focus {
+    color: var(--orange);
+}
+
 .profile-research-block {
     margin-top: 24px;
 }
@@ -777,7 +798,7 @@ section {
 
 
 /* =========================================================
-   21. EDUCATION / EXPERIENCE
+   22. EDUCATION / EXPERIENCE
    ========================================================= */
 
 .academic-list {
@@ -848,20 +869,192 @@ section {
     padding-right: 8.2%;
 }
 
-.students-placeholder {
-    max-width: 760px;
 
-    padding: 20px 22px;
+/* =========================================================
+   23. LAB MEMBER DIRECTORY
+   ========================================================= */
 
+.member-section {
+    background-color: #ffffff;
+}
+
+.member-section-alt {
     background-color: var(--light-bg);
 
-    border: 1px solid var(--border);
+    margin-left: -8.2%;
+    margin-right: -8.2%;
+
+    padding-left: 8.2%;
+    padding-right: 8.2%;
+}
+
+.member-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 34px;
+
+    max-width: 1000px;
+}
+
+.member-grid-pi {
+    grid-template-columns: minmax(200px, 250px);
+}
+
+.member-card {
+    text-align: center;
+}
+
+.member-card img,
+.member-photo-placeholder {
+    width: 100%;
+    max-width: 220px;
+
+    aspect-ratio: 1 / 1;
+
+    margin: 0 auto 15px;
+
     border-radius: 8px;
+}
+
+.member-card img {
+    object-fit: cover;
+}
+
+.member-photo-link {
+    display: block;
+
+    text-decoration: none;
+}
+
+.member-card h3 {
+    margin: 0 0 4px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.08rem;
+}
+
+.member-card h3 a,
+.member-card h3 a:link,
+.member-card h3 a:visited {
+    color: var(--dark-teal);
+
+    text-decoration: none;
+}
+
+.member-card h3 a:hover,
+.member-card h3 a:focus {
+    color: var(--orange);
+}
+
+.member-card p {
+    margin: 0;
+
+    color: var(--text-medium);
+
+    font-size: 0.91rem;
 }
 
 
 /* =========================================================
-   22. PUBLICATIONS PAGE
+   24. TEMPORARY MEMBER PHOTO PLACEHOLDERS
+   ========================================================= */
+
+.member-photo-placeholder {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-teal);
+
+    color: #ffffff;
+
+    font-size: 1.45rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   25. INDIVIDUAL MEMBER PROFILE
+   ========================================================= */
+
+.individual-profile-section {
+    padding-top: 60px;
+}
+
+.individual-profile-grid {
+    display: grid;
+
+    grid-template-columns: 280px minmax(0, 1fr);
+
+    gap: 48px;
+
+    align-items: start;
+}
+
+.individual-profile-photo img {
+    width: 100%;
+    max-width: 280px;
+
+    border-radius: 8px;
+}
+
+.individual-profile-content h1 {
+    margin: 0 0 12px;
+
+    color: var(--dark-teal);
+
+    font-size: 2.35rem;
+    line-height: 1.15;
+}
+
+.individual-profile-position {
+    margin: 0 0 26px;
+
+    color: var(--dark-teal);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    line-height: 1.7;
+}
+
+.individual-profile-content .profile-research-block {
+    margin-top: 26px;
+}
+
+.individual-profile-content .profile-research-block h2 {
+    margin: 0 0 13px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.15rem;
+}
+
+.individual-profile-content .profile-research-block p {
+    max-width: 780px;
+
+    margin: 0 0 17px;
+
+    color: var(--text-medium);
+
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.profile-back-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+/* =========================================================
+   26. PUBLICATIONS PAGE
    ========================================================= */
 
 .publication-section-heading {
@@ -977,7 +1170,7 @@ section {
 
 
 /* =========================================================
-   23. ALTERNATE SECTION
+   27. ALTERNATE SECTION
    ========================================================= */
 
 .alternate-section {
@@ -992,7 +1185,7 @@ section {
 
 
 /* =========================================================
-   24. CONFERENCES
+   28. CONFERENCES
    ========================================================= */
 
 .conference-list {
@@ -1052,7 +1245,7 @@ section {
 
 
 /* =========================================================
-   25. TEACHING PAGE - CURRENT COURSES
+   29. TEACHING PAGE - CURRENT COURSES
    ========================================================= */
 
 .current-course-grid {
@@ -1108,7 +1301,7 @@ section {
 
 
 /* =========================================================
-   26. TEACHING TEXT
+   30. TEACHING TEXT
    ========================================================= */
 
 .teaching-text {
@@ -1126,7 +1319,7 @@ section {
 
 
 /* =========================================================
-   27. TEACHING HISTORY
+   31. TEACHING HISTORY
    ========================================================= */
 
 .teaching-timeline {
@@ -1190,7 +1383,7 @@ section {
 
 
 /* =========================================================
-   28. FOOTER
+   32. FOOTER
    ========================================================= */
 
 footer {
@@ -1210,7 +1403,7 @@ footer p {
 
 
 /* =========================================================
-   29. TABLET
+   33. TABLET
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -1262,11 +1455,25 @@ footer p {
     .current-course-grid {
         grid-template-columns: 1fr;
     }
+
+    .member-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .member-grid-pi {
+        grid-template-columns: minmax(180px, 230px);
+    }
+
+    .individual-profile-grid {
+        grid-template-columns: 230px minmax(0, 1fr);
+
+        gap: 36px;
+    }
 }
 
 
 /* =========================================================
-   30. MOBILE
+   34. MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
@@ -1317,7 +1524,8 @@ footer p {
     .home-opportunities,
     .people-interests-section,
     .experience-section,
-    .alternate-section {
+    .alternate-section,
+    .member-section-alt {
         margin-left: -6%;
         margin-right: -6%;
 
@@ -1386,27 +1594,27 @@ footer p {
     .course-card {
         padding: 21px;
     }
-}
-/* =========================================================
 
-   CLICKABLE LAB TITLE
+    .member-grid,
+    .member-grid-pi {
+        grid-template-columns: 1fr;
+    }
 
-   ========================================================= */
+    .member-card {
+        max-width: 240px;
+    }
 
-.lab-identity h1 a,
+    .individual-profile-grid {
+        grid-template-columns: 1fr;
 
-.lab-identity h1 a:link,
+        gap: 28px;
+    }
 
-.lab-identity h1 a:visited,
+    .individual-profile-photo img {
+        max-width: 230px;
+    }
 
-.lab-identity h1 a:hover,
-
-.lab-identity h1 a:focus,
-
-.lab-identity h1 a:active {
-
-    color: #ffffff;
-
-    text-decoration: none;
-
+    .individual-profile-content h1 {
+        font-size: 2rem;
+    }
 }

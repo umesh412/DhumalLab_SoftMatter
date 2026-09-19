@@ -1768,10 +1768,3 @@ footer a:focus {
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
 }
-/* =========================================================
-   INDIVIDUAL MEMBER PHOTO POSITIONING
-   ========================================================= */
-
-.member-card img.kruti-photo {
-    object-position: center 30%;
-}

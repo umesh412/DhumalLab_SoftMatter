@@ -895,10 +895,10 @@ section {
 
     overflow: hidden;
 
-    background-color: #f4f7f8;
+    background: transparent;
 
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    border: none;
+    border-radius: 0;
 
     text-decoration: none;
 }
@@ -910,9 +910,9 @@ section {
     object-fit: contain;
     object-position: center;
 
-    border-radius: 8px;
+    border: none;
+    border-radius: 0;
 }
-
 .member-card h3 {
     margin: 0 0 4px;
 

@@ -1728,3 +1728,25 @@ footer a:focus {
 
     font-size: 0.91rem !important;
 }
+/* =========================================================
+   STUDENT PROFILE RESEARCH TITLE
+   ========================================================= */
+
+.student-research-title {
+    margin: 0 0 10px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.student-profile-detail {
+    margin: 3px 0 0 !important;
+
+    color: var(--text-medium) !important;
+
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+}

@@ -18,10 +18,8 @@ html {
 
 body {
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-
     color: #1f2933;
     background-color: #ffffff;
 }
@@ -62,22 +60,18 @@ img {
 .site-header {
     background-color: var(--dark-teal);
     color: #ffffff;
-
     padding: 24px 7% 18px;
 }
 
 .header-inner {
     width: 100%;
     max-width: 1220px;
-
     margin: 0 auto;
 }
 
 .lab-identity h1 {
     margin: 0;
-
     color: #ffffff;
-
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -85,9 +79,7 @@ img {
 
 .lab-identity p {
     margin: 3px 0 18px;
-
     color: var(--text-light);
-
     font-size: 1rem;
 }
 
@@ -103,7 +95,6 @@ img {
 .lab-identity h1 a:focus,
 .lab-identity h1 a:active {
     color: #ffffff;
-
     text-decoration: none;
 }
 
@@ -116,7 +107,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     gap: 10px 36px;
 
     padding-top: 15px;
@@ -128,9 +118,7 @@ img {
 .site-nav a:link,
 .site-nav a:visited {
     color: var(--cyan);
-
     text-decoration: none;
-
     font-size: 0.95rem;
     font-weight: 600;
 }
@@ -149,7 +137,6 @@ img {
 main {
     width: 86%;
     max-width: 1320px;
-
     margin: 0 auto;
 }
 
@@ -160,13 +147,11 @@ main {
 
 section {
     padding: 66px 0;
-
     border-bottom: 1px solid var(--border);
 }
 
 .section-heading {
     max-width: 860px;
-
     margin-bottom: 32px;
 }
 
@@ -177,7 +162,6 @@ section {
 
     font-size: 0.82rem;
     font-weight: 700;
-
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -211,7 +195,6 @@ section {
 
 .compact-heading h2 {
     margin-bottom: 8px;
-
     font-size: 1.45rem;
 }
 
@@ -246,9 +229,7 @@ section {
 .text-link:link,
 .text-link:visited {
     color: var(--cyan);
-
     text-decoration: none;
-
     font-weight: 700;
 }
 
@@ -275,7 +256,6 @@ section {
         minmax(360px, 0.75fr);
 
     gap: 48px;
-
     align-items: center;
 }
 
@@ -290,7 +270,6 @@ section {
 
     font-size: 2.55rem;
     line-height: 1.08;
-
     letter-spacing: -0.4px;
 
     white-space: nowrap;
@@ -436,7 +415,6 @@ section {
 
 .home-pi-position {
     color: var(--dark-teal) !important;
-
     font-weight: 600;
 }
 
@@ -474,7 +452,6 @@ section {
 
 .campus-image {
     overflow: hidden;
-
     border-radius: 8px;
 }
 
@@ -548,9 +525,7 @@ section {
 .contact-email a:link,
 .contact-email a:visited {
     color: var(--cyan);
-
     text-decoration: none;
-
     font-weight: 600;
 }
 
@@ -718,7 +693,7 @@ section {
 
 
 /* =========================================================
-   21. OLD PEOPLE PROFILE STYLES
+   21. PEOPLE - LEGACY PROFILE STYLES
    ========================================================= */
 
 .person-profile {
@@ -748,7 +723,6 @@ section {
 
 .person-title {
     color: var(--dark-teal) !important;
-
     font-weight: 600;
 }
 
@@ -768,9 +742,7 @@ section {
 .person-contact a:link,
 .person-contact a:visited {
     color: var(--cyan);
-
     text-decoration: none;
-
     font-weight: 600;
 }
 
@@ -906,8 +878,9 @@ section {
     text-align: center;
 }
 
+
 /* =========================================================
-   STANDARDIZED LAB MEMBER PHOTOS
+   24. STANDARDIZED LAB MEMBER PHOTOS
    ========================================================= */
 
 .member-photo-link {
@@ -940,12 +913,6 @@ section {
     border-radius: 8px;
 }
 
-.member-photo-link {
-    display: block;
-
-    text-decoration: none;
-}
-
 .member-card h3 {
     margin: 0 0 4px;
 
@@ -967,33 +934,13 @@ section {
     color: var(--orange);
 }
 
-.member-card p {
-    margin: 0;
+.member-position {
+    margin: 0 !important;
 
-    color: var(--text-medium);
+    color: var(--text-medium) !important;
 
-    font-size: 0.91rem;
-}
-
-
-/* =========================================================
-   24. TEMPORARY MEMBER PHOTO PLACEHOLDERS
-   ========================================================= */
-
-.member-photo-placeholder {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--dark-teal);
-
-    color: #ffffff;
-
-    font-size: 1.45rem;
-    font-weight: 700;
-
-    letter-spacing: 1px;
+    font-size: 0.91rem !important;
+    font-weight: 600;
 }
 
 
@@ -1063,6 +1010,25 @@ section {
 
     font-size: 1rem;
     line-height: 1.75;
+}
+
+.student-research-title {
+    margin: 0 0 10px;
+
+    color: var(--dark-teal);
+
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.student-profile-detail {
+    margin: 3px 0 0 !important;
+
+    color: var(--text-medium) !important;
+
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
 }
 
 .profile-back-section {
@@ -1263,7 +1229,7 @@ section {
 
 
 /* =========================================================
-   29. TEACHING PAGE - CURRENT COURSES
+   29. TEACHING - CURRENT COURSES
    ========================================================= */
 
 .current-course-grid {
@@ -1401,7 +1367,7 @@ section {
 
 
 /* =========================================================
-   FOOTER
+   32. FOOTER
    ========================================================= */
 
 footer {
@@ -1436,9 +1402,10 @@ footer a:focus {
 
 .footer-divider {
     margin: 0 8px;
-
     color: #78909a;
 }
+
+
 /* =========================================================
    33. TABLET
    ========================================================= */
@@ -1463,7 +1430,6 @@ footer a:focus {
 
     .hero-text h2 {
         white-space: normal;
-
         font-size: 2.4rem;
     }
 
@@ -1541,7 +1507,6 @@ footer a:focus {
 
     .hero-text h2 {
         font-size: 2rem;
-
         white-space: normal;
     }
 
@@ -1639,6 +1604,12 @@ footer a:focus {
 
     .member-card {
         max-width: 240px;
+        margin: 0 auto;
+    }
+
+    .member-photo-link {
+        width: 210px;
+        height: 210px;
     }
 
     .individual-profile-grid {
@@ -1654,117 +1625,4 @@ footer a:focus {
     .individual-profile-content h1 {
         font-size: 2rem;
     }
-}
-/* =========================================================
-   MEMBER PHOTO PLACEHOLDER
-   ========================================================= */
-
-.member-photo-empty {
-    width: 100%;
-    max-width: 220px;
-    aspect-ratio: 1 / 1;
-
-    margin: 0 auto 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #f4f7f8;
-
-    border: 1px dashed #b8c7cd;
-    border-radius: 8px;
-
-    color: #81939b;
-
-    font-size: 0.85rem;
-}
-
-
-/* =========================================================
-   MEMBER POSITION
-   ========================================================= */
-
-.member-position {
-    margin: 0 0 10px !important;
-
-    color: var(--text-medium) !important;
-
-    font-size: 0.91rem !important;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   MEMBER SHORT PROFILE
-   ========================================================= */
-
-.member-snippet {
-    max-width: 220px;
-
-    margin: 0 auto !important;
-
-    color: #6c7e88 !important;
-
-    font-size: 0.86rem !important;
-    line-height: 1.55 !important;
-}
-/* =========================================================
-   EMPTY MEMBER PHOTO PLACEHOLDER
-   ========================================================= */
-
-.member-photo-empty {
-    width: 100%;
-    max-width: 220px;
-    aspect-ratio: 1 / 1;
-
-    margin: 0 auto 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #f4f7f8;
-
-    border: 1px dashed #b8c7cd;
-    border-radius: 8px;
-
-    color: #81939b;
-
-    font-size: 0.85rem;
-}
-
-
-/* =========================================================
-   MEMBER POSITION
-   ========================================================= */
-
-.member-position {
-    margin: 0 !important;
-
-    color: var(--text-medium) !important;
-
-    font-size: 0.91rem !important;
-}
-/* =========================================================
-   STUDENT PROFILE RESEARCH TITLE
-   ========================================================= */
-
-.student-research-title {
-    margin: 0 0 10px;
-
-    color: var(--dark-teal);
-
-    font-size: 1.02rem;
-    font-weight: 700;
-    line-height: 1.5;
-}
-
-.student-profile-detail {
-    margin: 3px 0 0 !important;
-
-    color: var(--text-medium) !important;
-
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
 }
